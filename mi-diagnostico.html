@@ -72,7 +72,7 @@ if(pts.some(p=>p==null)){
   ice+='</svg>';
   // radar
   const R=108,cx=170,cy=162,ang=i=>-Math.PI/2+i*2*Math.PI/6,pt=(i,v)=>[cx+R*(v/4)*Math.cos(ang(i)),cy+R*(v/4)*Math.sin(ang(i))];
-  let rad=`<svg viewBox="0 0 340 324" role="img" aria-label="Radar de tus 6 dimensiones">`;
+  let rad=`<svg viewBox="-40 0 420 324" role="img" aria-label="Radar de tus 6 dimensiones">`;
   for(const l of [1,2,3,4])rad+=`<polygon points="${dims.map((_,i)=>pt(i,l).join(',')).join(' ')}" fill="none" stroke="rgba(255,255,255,${l===4?.25:.1})"/>`;
   rad+=`<polygon points="${dims.map((d,i)=>pt(i,d.prom).join(',')).join(' ')}" fill="rgba(233,255,123,.25)" stroke="#E9FF7B" stroke-width="2.5"/>`;
   dims.forEach((d,i)=>{const [x,y]=pt(i,5.1);const c=!parejo&&d===debil?'#ff6b5b':(!parejo&&d===fuerte?'#E9FF7B':'#dcdcd2');
