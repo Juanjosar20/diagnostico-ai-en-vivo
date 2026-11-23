@@ -1,0 +1,496 @@
+{
+ "total": {
+  "n": 0,
+  "inscritos": 1150,
+  "mit": {
+   "1": 28,
+   "2": 34,
+   "3": 31,
+   "4": 7
+  },
+  "niveles": [
+   {
+    "nivel": 1,
+    "nombre": "Experimentar",
+    "sala": 0,
+    "mit": 28
+   },
+   {
+    "nivel": 2,
+    "nombre": "Pilotos",
+    "sala": 0,
+    "mit": 34
+   },
+   {
+    "nivel": 3,
+    "nombre": "Escalar",
+    "sala": 0,
+    "mit": 31
+   },
+   {
+    "nivel": 4,
+    "nombre": "AI en el core",
+    "sala": 0,
+    "mit": 7
+   }
+  ],
+  "nivel_promedio": null,
+  "puntaje_promedio": null,
+  "dims": [
+   {
+    "id": "lid",
+    "nombre": "Liderazgo",
+    "promedio": null
+   },
+   {
+    "id": "ado",
+    "nombre": "Adopción",
+    "promedio": null
+   },
+   {
+    "id": "dat",
+    "nombre": "Datos y tecnología",
+    "promedio": null
+   },
+   {
+    "id": "gob",
+    "nombre": "Gobernanza",
+    "promedio": null
+   },
+   {
+    "id": "tal",
+    "nombre": "Talento",
+    "promedio": null
+   },
+   {
+    "id": "res",
+    "nombre": "Resultados",
+    "promedio": null
+   }
+  ],
+  "eslabon": {
+   "pct": 0,
+   "bajaron_pct": 0
+  },
+  "frases": [
+   {
+    "id": "dueno",
+    "texto": "«¿Quién es dueño de la AI acá?»",
+    "pct": 0
+   },
+   {
+    "id": "datos",
+    "texto": "«No sé qué AI se usa ni qué datos salen»",
+    "pct": 0
+   },
+   {
+    "id": "retorno",
+    "texto": "«No veo el retorno de lo que ya pagamos»",
+    "pct": 0
+   },
+   {
+    "id": "ninguna",
+    "texto": "Ninguna",
+    "pct": 0
+   }
+  ],
+  "tamano": [
+   {
+    "id": "menos_50",
+    "texto": "Menos de 50",
+    "pct": 0
+   },
+   {
+    "id": "50_200",
+    "texto": "50 a 200",
+    "pct": 0
+   },
+   {
+    "id": "200_1000",
+    "texto": "200 a 1.000",
+    "pct": 0
+   },
+   {
+    "id": "mas_1000",
+    "texto": "Más de 1.000",
+    "pct": 0
+   }
+  ],
+  "etiqueta": "Acumulado de las 3 sesiones"
+ },
+ "por_dia": {
+  "2026-11-24": {
+   "n": 0,
+   "inscritos": 1150,
+   "mit": {
+    "1": 28,
+    "2": 34,
+    "3": 31,
+    "4": 7
+   },
+   "niveles": [
+    {
+     "nivel": 1,
+     "nombre": "Experimentar",
+     "sala": 0,
+     "mit": 28
+    },
+    {
+     "nivel": 2,
+     "nombre": "Pilotos",
+     "sala": 0,
+     "mit": 34
+    },
+    {
+     "nivel": 3,
+     "nombre": "Escalar",
+     "sala": 0,
+     "mit": 31
+    },
+    {
+     "nivel": 4,
+     "nombre": "AI en el core",
+     "sala": 0,
+     "mit": 7
+    }
+   ],
+   "nivel_promedio": null,
+   "puntaje_promedio": null,
+   "dims": [
+    {
+     "id": "lid",
+     "nombre": "Liderazgo",
+     "promedio": null
+    },
+    {
+     "id": "ado",
+     "nombre": "Adopción",
+     "promedio": null
+    },
+    {
+     "id": "dat",
+     "nombre": "Datos y tecnología",
+     "promedio": null
+    },
+    {
+     "id": "gob",
+     "nombre": "Gobernanza",
+     "promedio": null
+    },
+    {
+     "id": "tal",
+     "nombre": "Talento",
+     "promedio": null
+    },
+    {
+     "id": "res",
+     "nombre": "Resultados",
+     "promedio": null
+    }
+   ],
+   "eslabon": {
+    "pct": 0,
+    "bajaron_pct": 0
+   },
+   "frases": [
+    {
+     "id": "dueno",
+     "texto": "«¿Quién es dueño de la AI acá?»",
+     "pct": 0
+    },
+    {
+     "id": "datos",
+     "texto": "«No sé qué AI se usa ni qué datos salen»",
+     "pct": 0
+    },
+    {
+     "id": "retorno",
+     "texto": "«No veo el retorno de lo que ya pagamos»",
+     "pct": 0
+    },
+    {
+     "id": "ninguna",
+     "texto": "Ninguna",
+     "pct": 0
+    }
+   ],
+   "tamano": [
+    {
+     "id": "menos_50",
+     "texto": "Menos de 50",
+     "pct": 0
+    },
+    {
+     "id": "50_200",
+     "texto": "50 a 200",
+     "pct": 0
+    },
+    {
+     "id": "200_1000",
+     "texto": "200 a 1.000",
+     "pct": 0
+    },
+    {
+     "id": "mas_1000",
+     "texto": "Más de 1.000",
+     "pct": 0
+    }
+   ],
+   "etiqueta": "Martes 24"
+  },
+  "2026-11-25": {
+   "n": 0,
+   "inscritos": 1150,
+   "mit": {
+    "1": 28,
+    "2": 34,
+    "3": 31,
+    "4": 7
+   },
+   "niveles": [
+    {
+     "nivel": 1,
+     "nombre": "Experimentar",
+     "sala": 0,
+     "mit": 28
+    },
+    {
+     "nivel": 2,
+     "nombre": "Pilotos",
+     "sala": 0,
+     "mit": 34
+    },
+    {
+     "nivel": 3,
+     "nombre": "Escalar",
+     "sala": 0,
+     "mit": 31
+    },
+    {
+     "nivel": 4,
+     "nombre": "AI en el core",
+     "sala": 0,
+     "mit": 7
+    }
+   ],
+   "nivel_promedio": null,
+   "puntaje_promedio": null,
+   "dims": [
+    {
+     "id": "lid",
+     "nombre": "Liderazgo",
+     "promedio": null
+    },
+    {
+     "id": "ado",
+     "nombre": "Adopción",
+     "promedio": null
+    },
+    {
+     "id": "dat",
+     "nombre": "Datos y tecnología",
+     "promedio": null
+    },
+    {
+     "id": "gob",
+     "nombre": "Gobernanza",
+     "promedio": null
+    },
+    {
+     "id": "tal",
+     "nombre": "Talento",
+     "promedio": null
+    },
+    {
+     "id": "res",
+     "nombre": "Resultados",
+     "promedio": null
+    }
+   ],
+   "eslabon": {
+    "pct": 0,
+    "bajaron_pct": 0
+   },
+   "frases": [
+    {
+     "id": "dueno",
+     "texto": "«¿Quién es dueño de la AI acá?»",
+     "pct": 0
+    },
+    {
+     "id": "datos",
+     "texto": "«No sé qué AI se usa ni qué datos salen»",
+     "pct": 0
+    },
+    {
+     "id": "retorno",
+     "texto": "«No veo el retorno de lo que ya pagamos»",
+     "pct": 0
+    },
+    {
+     "id": "ninguna",
+     "texto": "Ninguna",
+     "pct": 0
+    }
+   ],
+   "tamano": [
+    {
+     "id": "menos_50",
+     "texto": "Menos de 50",
+     "pct": 0
+    },
+    {
+     "id": "50_200",
+     "texto": "50 a 200",
+     "pct": 0
+    },
+    {
+     "id": "200_1000",
+     "texto": "200 a 1.000",
+     "pct": 0
+    },
+    {
+     "id": "mas_1000",
+     "texto": "Más de 1.000",
+     "pct": 0
+    }
+   ],
+   "etiqueta": "Miércoles 25"
+  },
+  "2026-11-26": {
+   "n": 0,
+   "inscritos": 1150,
+   "mit": {
+    "1": 28,
+    "2": 34,
+    "3": 31,
+    "4": 7
+   },
+   "niveles": [
+    {
+     "nivel": 1,
+     "nombre": "Experimentar",
+     "sala": 0,
+     "mit": 28
+    },
+    {
+     "nivel": 2,
+     "nombre": "Pilotos",
+     "sala": 0,
+     "mit": 34
+    },
+    {
+     "nivel": 3,
+     "nombre": "Escalar",
+     "sala": 0,
+     "mit": 31
+    },
+    {
+     "nivel": 4,
+     "nombre": "AI en el core",
+     "sala": 0,
+     "mit": 7
+    }
+   ],
+   "nivel_promedio": null,
+   "puntaje_promedio": null,
+   "dims": [
+    {
+     "id": "lid",
+     "nombre": "Liderazgo",
+     "promedio": null
+    },
+    {
+     "id": "ado",
+     "nombre": "Adopción",
+     "promedio": null
+    },
+    {
+     "id": "dat",
+     "nombre": "Datos y tecnología",
+     "promedio": null
+    },
+    {
+     "id": "gob",
+     "nombre": "Gobernanza",
+     "promedio": null
+    },
+    {
+     "id": "tal",
+     "nombre": "Talento",
+     "promedio": null
+    },
+    {
+     "id": "res",
+     "nombre": "Resultados",
+     "promedio": null
+    }
+   ],
+   "eslabon": {
+    "pct": 0,
+    "bajaron_pct": 0
+   },
+   "frases": [
+    {
+     "id": "dueno",
+     "texto": "«¿Quién es dueño de la AI acá?»",
+     "pct": 0
+    },
+    {
+     "id": "datos",
+     "texto": "«No sé qué AI se usa ni qué datos salen»",
+     "pct": 0
+    },
+    {
+     "id": "retorno",
+     "texto": "«No veo el retorno de lo que ya pagamos»",
+     "pct": 0
+    },
+    {
+     "id": "ninguna",
+     "texto": "Ninguna",
+     "pct": 0
+    }
+   ],
+   "tamano": [
+    {
+     "id": "menos_50",
+     "texto": "Menos de 50",
+     "pct": 0
+    },
+    {
+     "id": "50_200",
+     "texto": "50 a 200",
+     "pct": 0
+    },
+    {
+     "id": "200_1000",
+     "texto": "200 a 1.000",
+     "pct": 0
+    },
+    {
+     "id": "mas_1000",
+     "texto": "Más de 1.000",
+     "pct": 0
+    }
+   ],
+   "etiqueta": "Jueves 26"
+  }
+ },
+ "dias": [
+  {
+   "id": "2026-11-24",
+   "etiqueta": "Martes 24"
+  },
+  {
+   "id": "2026-11-25",
+   "etiqueta": "Miércoles 25"
+  },
+  {
+   "id": "2026-11-26",
+   "etiqueta": "Jueves 26"
+  }
+ ],
+ "inscritos": 1150,
+ "actualizado": "2026-11-23T23:29:46Z"
+}

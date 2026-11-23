@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diagnóstico AI en vivo · 30X</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--ink:#fff;--ink2:#dcdcd2;--muted:#9a9a8c;--lime:#E9FF7B;--amber:#f5c84c;--red:#ff6b5b;--track:rgba(255,255,255,.08);--line:rgba(255,255,255,.10)}
+*{box-sizing:border-box}
+html,body{margin:0;color:rgba(255,255,255,.88);font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss01"}
+body{min-height:100vh;background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.82) 75%),url(shader-30x.jpg) center top/cover no-repeat fixed,#0A0A0A}
+.wrap{max-width:1680px;margin:0 auto;padding:18px 32px 14px;display:flex;flex-direction:column;gap:14px;min-height:100vh}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.eyebrow,.k{font-family:"Geist Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.08em;font-size:12px;text-transform:uppercase;color:var(--lime)}
+.logo30{height:26px;width:auto;vertical-align:middle}
+h1{font-size:44px;line-height:1.04;margin:8px 0 0;font-weight:600;letter-spacing:-.045em;color:#fff}
+h1 em{font-style:normal;color:var(--lime)}
+.tabs{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.tabs a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(12,12,12,.5)}
+.tabs a.on{background:var(--lime);color:#0A0A0A;border-color:var(--lime)}
+.count{text-align:right;flex-shrink:0}
+.count .n{font-size:96px;line-height:.85;font-weight:600;color:var(--lime);letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.count .lbl{font-size:18px;color:var(--ink2);margin-top:8px}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-top:4px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--lime);animation:p 2s infinite}
+@keyframes p{0%{box-shadow:0 0 0 0 rgba(233,255,123,.5)}70%{box-shadow:0 0 0 12px rgba(233,255,123,0)}100%{box-shadow:0 0 0 0 rgba(233,255,123,0)}}
+.grid{display:grid;grid-template-columns:1.3fr 1.1fr .72fr;gap:14px}
+.card{background:rgba(12,12,12,.64);border:1px solid var(--line);border-radius:16px;padding:18px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);min-width:0}
+.k{margin:0 0 10px}
+.avg{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.avg .v{font-size:64px;font-weight:600;color:#fff;letter-spacing:-.04em;line-height:1}
+.avg .v small{font-size:24px;color:var(--muted);font-weight:500;letter-spacing:0}
+.avg .s{font-size:16px;color:var(--ink2)}
+svg{display:block;width:100%;height:auto}
+.rows{display:flex;flex-direction:column;gap:12px}
+.row{display:grid;grid-template-columns:170px 1fr 52px;align-items:center;gap:12px}
+.row .lab{font-size:18px;color:var(--ink2);line-height:1.1}
+.row .val{font-size:24px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.track{height:22px;background:var(--track);border-radius:11px;overflow:hidden;position:relative}
+.fill{height:100%;border-radius:11px;transition:width .8s cubic-bezier(.16,1,.3,1)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:2px}
+.tag.r{background:var(--red);color:#0A0A0A}.tag.l{background:var(--lime);color:#0A0A0A}
+.scale{display:grid;grid-template-columns:170px 1fr 52px;gap:12px;font-size:12px;color:var(--muted);margin-top:6px}
+.scale div:nth-child(2){display:flex;justify-content:space-between}
+.qr{text-align:center}
+.qr img{width:100%;max-width:230px;border-radius:14px;background:#fff;padding:10px;display:block;margin:4px auto 10px}
+.qr .bigt{font-size:24px;font-weight:600;color:#fff}
+.qr .url{font-size:12px;color:var(--muted);word-break:break-all}
+.chips{display:flex;flex-direction:column;gap:9px}
+.chip{display:flex;justify-content:space-between;align-items:center;gap:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:11px 16px;font-size:19px;color:var(--ink2);font-weight:600;line-height:1.2}
+.chip b{font-size:32px;color:var(--lime);font-weight:600;letter-spacing:-.03em;white-space:nowrap}
+.chip.top{background:var(--lime);color:#0A0A0A;border-color:var(--lime);font-size:23px;padding:16px 18px}
+.chip.top b{color:#0A0A0A;font-size:46px}
+.big{font-size:88px;font-weight:600;color:var(--lime);letter-spacing:-.05em;line-height:.95}
+.txt{font-size:19px;line-height:1.3;color:var(--ink2);margin-top:8px}
+.quote{font-size:18px;line-height:1.3;font-weight:600;padding:8px 0 8px 14px;border-left:4px solid var(--lime);margin-top:12px;color:#fff}
+.fine{font-size:12px;color:var(--muted);line-height:1.4}
+.empty{color:var(--muted);font-size:18px}
+@media (max-width:1100px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:720px){.grid{grid-template-columns:1fr}.wrap{padding:16px}header{flex-direction:column;align-items:flex-start}.count{text-align:left}h1{font-size:30px}.row,.scale{grid-template-columns:110px 1fr 44px}.row .lab{font-size:15px}.big{font-size:64px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow"><img class="logo30" src="logo-30x.svg" alt="30X"> &nbsp;·&nbsp; Liderar la AI · Diagnóstico en vivo · <span id="dialbl">–</span></div>
+      <h1>¿En qué nivel de <em>AI</em> está esta sala?</h1>
+      <nav class="tabs" id="tabs"></nav>
+    </div>
+    <div class="count"><div class="n" id="n">0</div><div class="lbl" id="nlbl">diagnósticos</div><div class="live"><span class="dot"></span><span id="upd">en vivo</span></div></div>
+  </header>
+  <div class="grid">
+    <section class="card"><p class="k">El iceberg de la sala · nivel 1 a 4</p>
+      <div class="avg"><div class="v" id="avg">–</div><div class="s" id="avgs">Esperando respuestas…</div></div>
+      <div id="ice"></div></section>
+    <section class="card"><p class="k">Las 6 dimensiones · promedio de 1 a 4</p><div class="rows" id="dims"><div class="empty">Esperando las primeras respuestas…</div></div>
+      <div class="scale"><div></div><div><span>1</span><span>2</span><span>3</span><span>4</span></div><div></div></div></section>
+    <section class="card qr"><p class="k">Respondé desde tu celular</p><img src="qr.png" alt="Código QR del diagnóstico"><div class="bigt">4 minutos</div><div class="url" style="font-size:14px;margin-bottom:4px">al terminar ves tu nivel en el celular</div><div class="url">form.30x.com/to/cmwtw1iou0x7201s6i8yzh557</div></section>
+  </div>
+  <div class="grid">
+    <section class="card"><p class="k">La frase del comité más elegida · la que escribiste en el chat</p><div class="chips" id="frases"><div class="empty">–</div></div></section>
+    <section class="card"><p class="k">Regla del eslabón débil</p><div id="esl"><div class="empty">–</div></div></section>
+    <section class="card"><p class="k">Tamaño de empresa · personas</p><div class="rows" id="tam"><div class="empty">–</div></div></section>
+  </div>
+  <div class="fine">Solo datos agregados y anónimos, sin nombres ni correos. Una respuesta por correo. Nivel calculado con la regla del eslabón débil (si Liderazgo o Gobernanza promedian menos de 2, el nivel no pasa de 2). Referencia: % de empresas por nivel según MIT CISR, Enterprise AI Maturity Model (2024).</div>
+</div>
+<script>
+const DATA_URL=new URLSearchParams(location.search).get('data')||window.DATA_URL||'data.json';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=n=>Number(n).toLocaleString('es-CO');
+const dec=n=>Number(n).toLocaleString('es-CO',{minimumFractionDigits:1,maximumFractionDigits:1});
+const NOMBRES={1:'Experimentar',2:'Pilotos',3:'Escalar',4:'AI en el core'};
+function hoyCol(){const t=new Date(Date.now()-5*3600e3);return t.toISOString().slice(0,10)}
+let last=null;
+function diaSel(d){
+  const q=new URLSearchParams(location.search).get('dia');
+  const ids=(d.dias||[]).map(x=>x.id);
+  if(q==='todo'||q==='acumulado')return 'todo';
+  if(q){const m=ids.find(id=>id===q||id.endsWith('-'+q.padStart(2,'0')));if(m)return m}
+  const h=hoyCol();return ids.includes(h)?h:'todo';
+}
+function tabs(d,sel){
+  const p=new URLSearchParams(location.search);
+  const mk=(id,lab)=>{p.set('dia',id==='todo'?'todo':id.slice(-2));return `<a href="?${p.toString()}" class="${sel===id?'on':''}">${esc(lab)}</a>`};
+  $('tabs').innerHTML=(d.dias||[]).map(x=>mk(x.id,x.etiqueta)).join('')+mk('todo','Acumulado');
+}
+function iceberg(a,n){
+  // banda 4 arriba (sobre el agua), 1 abajo (la más ancha)
+  const B=[{k:4,y:6,h:58,t:40,b:120},{k:3,y:80,h:76,t:132,b:220},{k:2,y:160,h:84,t:228,b:318},{k:1,y:248,h:88,t:326,b:404}];
+  const cx=150,avg=n?a.nivel_promedio:null,sel=n?Math.min(4,Math.max(1,Math.round(avg))):null;
+  const lv=Object.fromEntries((a.niveles||[]).map(x=>[x.nivel,x]));
+  let s=`<svg viewBox="0 0 760 344" role="img" aria-label="Iceberg de niveles de AI de la sala"><line x1="0" y1="72" x2="300" y2="72" stroke="#7fb3ff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="6 6"/><text x="4" y="90" font-size="11" fill="#7fb3ff" fill-opacity=".8" font-family="Geist Mono,monospace">LÍNEA DE AGUA</text>`;
+  s+=`<text x="560" y="14" font-size="12" fill="#9a9a8c" font-family="Geist Mono,monospace" text-anchor="middle">SALA</text><text x="690" y="14" font-size="12" fill="#9a9a8c" font-family="Geist Mono,monospace" text-anchor="middle">MIT CISR</text>`;
+  for(const b of B){
+    const on=b.k===sel,x=lv[b.k]||{sala:0,mit:''};
+    const p=`${cx-b.t/2},${b.y} ${cx+b.t/2},${b.y} ${cx+b.b/2},${b.y+b.h} ${cx-b.b/2},${b.y+b.h}`;
+    s+=`<polygon points="${p}" fill="${on?'#E9FF7B':(b.k===4?'rgba(255,255,255,.22)':'rgba(127,179,255,'+(0.10+0.05*(4-b.k))+')')}" stroke="${on?'#E9FF7B':'rgba(255,255,255,.25)'}" stroke-width="1.5"/>`;
+    const my=b.y+b.h/2;
+    s+=`<text x="${cx}" y="${my+7}" text-anchor="middle" font-size="20" font-weight="700" fill="${on?'#0A0A0A':'#fff'}" font-family="Inter">${b.k}</text>`;
+    s+=`<text x="372" y="${my+7}" font-size="20" font-weight="600" fill="${on?'#E9FF7B':'#dcdcd2'}" font-family="Inter">${on?'▸ ':''}${NOMBRES[b.k]}</text>`;
+    s+=`<text x="560" y="${my+11}" text-anchor="middle" font-size="34" font-weight="700" fill="${on?'#E9FF7B':'#fff'}" font-family="Inter">${n?x.sala+' %':'–'}</text>`;
+    s+=`<text x="690" y="${my+8}" text-anchor="middle" font-size="22" font-weight="600" fill="#9a9a8c" font-family="Inter">${x.mit} %</text>`;
+  }
+  return s+'</svg>';
+}
+function render(d){
+  const sel=diaSel(d);tabs(d,sel);
+  const a=sel==='todo'?d.total:(d.por_dia||{})[sel];
+  if(!a)return;
+  const n=a.n||0;
+  $('dialbl').textContent=a.etiqueta||'';
+  $('n').textContent=fmt(n);
+  $('nlbl').textContent=d.inscritos?`diagnósticos · de ${fmt(d.inscritos)} inscritos`:'diagnósticos';
+  if(d.actualizado){const t=new Date(d.actualizado);$('upd').textContent='en vivo · '+t.toLocaleTimeString('es-CO',{hour:'2-digit',minute:'2-digit'})}
+  $('avg').innerHTML=n?`${dec(a.nivel_promedio)} <small>de 4</small>`:'–';
+  $('avgs').textContent=n?`Nivel promedio de la sala · ${a.puntaje_promedio} de 60 puntos`:'Esperando respuestas…';
+  $('ice').innerHTML=iceberg(a,n);
+  $('dims').innerHTML=n?a.dims.map(x=>{const c=x.floja?'var(--red)':'var(--lime)';return `<div class="row"><div class="lab">${esc(x.nombre)}${x.floja?'<br><span class="tag r" style="margin:4px 0 0">la más floja</span>':''}</div><div class="track"><div class="fill" style="width:${Math.max((x.promedio-1)/3*100,2)}%;background:${c}"></div></div><div class="val" style="color:${x.floja?'var(--red)':'#fff'}">${dec(x.promedio)}</div></div>`}).join(''):'<div class="empty">Esperando las primeras respuestas…</div>';
+  const fr=(a.frases||[]);
+  $('frases').innerHTML=n?fr.map((f,i)=>`<div class="chip${i===0&&f.id!=='ninguna'?' top':''}"><span>${esc(f.texto)}</span><b>${f.pct} %</b></div>`).join(''):'<div class="empty">–</div>';
+  const e=a.eslabon||{};
+  $('esl').innerHTML=n?`<div class="big">${e.pct} %</div><div class="txt">de la sala tiene <b style="color:#fff">Liderazgo o Gobernanza</b> por debajo de 2: sin dueño o sin reglas, no pasa del nivel 2.</div>${e.bajaron_pct?`<div class="txt" style="font-size:16px;color:var(--muted)">${e.bajaron_pct} % sumaba puntos de nivel 3 o 4 y quedó en 2 por esta regla.</div>`:''}<div class="quote">«Usás mucha AI, pero sin dueño o sin reglas no escala.»</div>`:'<div class="empty">–</div>';
+  $('tam').innerHTML=n?(a.tamano||[]).map(t=>`<div class="row" style="grid-template-columns:120px 1fr 52px"><div class="lab" style="font-size:16px">${esc(t.texto)}</div><div class="track"><div class="fill" style="width:${Math.max(t.pct,2)}%;background:var(--lime)"></div></div><div class="val" style="font-size:20px">${t.pct} %</div></div>`).join(''):'<div class="empty">–</div>';
+}
+async function tick(){try{const r=await fetch(DATA_URL+(DATA_URL.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(r.ok){last=await r.json();render(last)}}catch(e){}}
+window.addEventListener('popstate',()=>last&&render(last));
+tick();setInterval(tick,20000);
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tu nivel de AI · 30X</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#E9FF7B;--red:#ff6b5b;--ink2:#dcdcd2;--muted:#9a9a8c;--line:rgba(255,255,255,.10)}
+*{box-sizing:border-box}
+html,body{margin:0;color:rgba(255,255,255,.88);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.9) 60%),url(shader-30x.jpg) center top/cover no-repeat fixed,#0A0A0A;min-height:100vh}
+.wrap{max-width:760px;margin:0 auto;padding:22px 16px 48px;display:flex;flex-direction:column;gap:14px}
+.k{font-family:"Geist Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);margin:0 0 10px}
+.logo{height:24px}
+h1{font-size:30px;line-height:1.1;letter-spacing:-.03em;font-weight:600;margin:6px 0 0;color:#fff}
+.card{background:rgba(12,12,12,.7);border:1px solid var(--line);border-radius:16px;padding:18px}
+.lvl{font-size:46px;font-weight:700;letter-spacing:-.04em;color:var(--lime);line-height:1}
+.pts{color:var(--ink2);margin-top:6px;font-size:16px}
+.msg{font-size:19px;line-height:1.4;color:#fff;margin-top:14px}
+.alert{border-left:4px solid var(--red);padding:10px 14px;background:rgba(255,107,91,.08);border-radius:0 12px 12px 0;margin-top:14px}
+.alert b{color:#fff;font-size:18px;display:block}
+.alert span{color:var(--ink2);font-size:15px}
+svg{display:block;width:100%;height:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.pill{border:1px solid var(--line);border-radius:12px;padding:12px}
+.pill .t{font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.pill .v{font-size:19px;font-weight:600;color:#fff;margin-top:4px}
+.pill.f .v{color:var(--lime)}.pill.d .v{color:var(--red)}
+.cta{display:block;text-align:center;background:var(--lime);color:#0A0A0A;font-weight:700;text-decoration:none;padding:15px;border-radius:10px;font-size:17px;margin-top:14px}
+.fine{font-size:12px;color:var(--muted);line-height:1.4}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<script>
+const D={"preguntas": [{"ref": "aip01lid", "dim": "lid", "ops": ["No está claro, o a IT", "A cada área por su lado", "A una persona con nombre que coordina la AI", "A un líder del comité con presupuesto y metas de AI"]}, {"ref": "aip02lid", "dim": "lid", "ops": ["Nunca, o no sé", "Alguna vez, de pasada", "En el último mes, frente a su equipo", "Es habitual: los líderes muestran sus casos en público"]}, {"ref": "aip03lid", "dim": "lid", "ops": ["No", "Se habló, pero no está escrito", "Hay un comunicado con expectativas claras", "Sí, y cambió cómo se piden recursos y cómo se evalúa a la gente"]}, {"ref": "aip04ado", "dim": "ado", "ops": ["No lo sé", "Menos de 1 de cada 4", "Entre 1 de cada 4 y la mitad", "Más de la mitad, y lo medimos"]}, {"ref": "aip05ado", "dim": "ado", "ops": ["Queda en esa persona; a veces hasta lo esconde", "Lo comparte con su equipo, de manera informal", "Hay champions o un canal que lo lleva a otras áreas", "Se convierte en el estándar del proceso"]}, {"ref": "aip06ado", "dim": "ado", "ops": ["Ninguno", "Hay pilotos, pero nada en producción", "Entre 1 y 3 en producción", "Más de 3, con la AI dentro del flujo de trabajo"]}, {"ref": "aip07dat", "dim": "dat", "ops": ["Cada uno la suya, muchas con cuentas personales", "Algunas áreas pagan la suya por separado", "Hay una o dos herramientas aprobadas para toda la empresa", "Herramientas aprobadas y una plataforma central que conecta modelos, datos y controles"]}, {"ref": "aip08dat", "dim": "dat", "ops": ["No: está dispersa en planillas, mails y cabezas", "Una parte está ordenada, pero cuesta llegar", "Los datos clave están centralizados y documentados", "Ya hay asistentes que consultan datos internos con permisos controlados"]}, {"ref": "aip09gob", "dim": "gob", "ops": ["No tengo idea", "Lo intuyo, pero no lo controlamos", "Hay una política de qué datos se pueden usar y cuáles no", "La política se cumple sola: el sistema bloquea los datos sensibles"]}, {"ref": "aip10gob", "dim": "gob", "ops": ["No hay proceso: lo hace por su cuenta o se lo prohíben", "Pide permiso a IT o a legal y espera semanas", "Hay un camino claro según el riesgo del caso", "Lo de bajo riesgo ya está aprobado; lo de alto riesgo va a un comité con plazos"]}, {"ref": "aip11tal", "dim": "tal", "ops": ["La mayoría nunca la probó en serio", "Algunos aprendieron solos", "Hubo capacitación por rol o por área", "La fluidez en AI se evalúa al contratar y en las evaluaciones de desempeño"]}, {"ref": "aip12tal", "dim": "tal", "ops": ["No", "Hay entusiastas, sin un rol formal", "Hay champions nombrados en algunas áreas", "Hay champions en todas las áreas, con tiempo asignado"]}, {"ref": "aip13res", "dim": "res", "ops": ["No lo sé", "Tengo una idea aproximada", "Lo sé por área", "Lo sé por área y por proyecto, y lo comparo con el retorno"]}, {"ref": "aip14res", "dim": "res", "ops": ["No", "Hay percepciones, no números", "Sí, al menos uno, con métrica y punto de partida", "Varios, y se reportan al directorio"]}, {"ref": "aip15res", "dim": "res", "ops": ["Ninguno todavía", "Es un proyecto de tecnología", "Hay objetivos de AI para algunas áreas", "Hay productos o servicios que existen gracias a la AI"]}], "dims": [{"id": "lid", "nombre": "Liderazgo"}, {"id": "ado", "nombre": "Adopción"}, {"id": "dat", "nombre": "Datos y tecnología"}, {"id": "gob", "nombre": "Gobernanza"}, {"id": "tal", "nombre": "Talento"}, {"id": "res", "nombre": "Resultados"}], "niveles": [{"nivel": 1, "nombre": "Experimentar", "mit": 28, "msg": "Tu gente ya está usando AI, pero nadie la está liderando. Tu primer paso: nombrar un dueño y aprobar una herramienta."}, {"nivel": 2, "nombre": "Pilotos", "mit": 34, "msg": "Tenés pilotos, pero no escalan. Te faltan dueños por proceso, reglas claras o medir resultados."}, {"nivel": 3, "nombre": "Escalar", "mit": 31, "msg": "La AI ya es parte del trabajo. El próximo salto es medir retorno y llevarla al core del negocio."}, {"nivel": 4, "nombre": "AI en el core", "mit": 7, "msg": "Estás en el 7 % de las empresas. El desafío ahora es sostener la ventaja."}], "eslabon": "Usás mucha AI, pero sin dueño o sin reglas no escala.", "curso": "https://30x.com/ai-transformation?utm_source=workshop&utm_medium=diagnostico&utm_campaign=workshop-liderar-ai"};
+const q=new URLSearchParams(location.search);
+const norm=s=>String(s||"").normalize("NFC").replace(/[«»"“”]/g,"").replace(/\s+/g," ").trim().toLowerCase();
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const dec=n=>Number(n).toLocaleString('es-CO',{minimumFractionDigits:1,maximumFractionDigits:1});
+function puntos(i){const v=q.get('p'+(i+1));if(v==null)return null;if(/^[1-4]$/.test(v.trim()))return +v;
+  const ops=D.preguntas[i].ops;const nv=norm(v);for(let k=0;k<4;k++)if(norm(ops[k])===nv)return k+1;
+  const m=String(v).match(/_([1-4])$/);return m?+m[1]:null}
+const pts=D.preguntas.map((_,i)=>puntos(i));
+const app=document.getElementById('app');
+if(pts.some(p=>p==null)){
+  app.innerHTML=`<img class="logo" src="logo-30x.svg" alt="30X"><div class="card"><h1>No pudimos leer tus respuestas</h1><p class="msg">Abrí este enlace desde el botón «Ver mi diagnóstico completo» al terminar el formulario.</p></div>`;
+}else{
+  const total=pts.reduce((a,b)=>a+b,0);
+  const dims=D.dims.map(d=>{const v=D.preguntas.map((p,i)=>p.dim===d.id?pts[i]:null).filter(x=>x!=null);return {...d,sum:v.reduce((a,b)=>a+b,0),prom:v.reduce((a,b)=>a+b,0)/v.length}});
+  const by=Object.fromEntries(dims.map(d=>[d.id,d]));
+  const bruto=total<=25?1:total<=37?2:total<=49?3:4;
+  const esl=by.lid.prom<2||by.gob.prom<2;
+  const nivel=esl?Math.min(bruto,2):bruto;
+  const N=D.niveles.find(x=>x.nivel===nivel);
+  const fuerte=dims.reduce((a,b)=>b.prom>a.prom?b:a),debil=dims.reduce((a,b)=>b.prom<a.prom?b:a);
+  const parejo=fuerte.prom===debil.prom;
+  const nombre=(q.get('n')||'').split(' ')[0];
+  // iceberg
+  const B=[{k:4,y:6,h:54,t:36,b:110},{k:3,y:74,h:70,t:122,b:204},{k:2,y:148,h:78,t:212,b:296},{k:1,y:230,h:82,t:304,b:376}];
+  let ice=`<svg viewBox="0 0 600 318" role="img" aria-label="Tu nivel en el iceberg"><line x1="0" y1="67" x2="280" y2="67" stroke="#7fb3ff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="6 6"/>`;
+  ice+=`<text x="540" y="14" font-size="11" fill="#9a9a8c" font-family="Geist Mono,monospace" text-anchor="middle">MIT CISR</text>`;
+  for(const b of B){const on=b.k===nivel,cx=140,my=b.y+b.h/2,L=D.niveles.find(x=>x.nivel===b.k);
+    ice+=`<polygon points="${cx-b.t/2},${b.y} ${cx+b.t/2},${b.y} ${cx+b.b/2},${b.y+b.h} ${cx-b.b/2},${b.y+b.h}" fill="${on?'#E9FF7B':(b.k===4?'rgba(255,255,255,.22)':'rgba(127,179,255,'+(0.10+0.05*(4-b.k))+')')}" stroke="${on?'#E9FF7B':'rgba(255,255,255,.25)'}" stroke-width="1.5"/>`;
+    ice+=`<text x="${cx}" y="${my+7}" text-anchor="middle" font-size="20" font-weight="700" fill="${on?'#0A0A0A':'#fff'}" font-family="Inter">${b.k}</text>`;
+    ice+=`<text x="340" y="${my+2}" font-size="19" font-weight="600" fill="${on?'#E9FF7B':'#dcdcd2'}" font-family="Inter">${on?'▸ ':''}${L.nombre}</text>`;
+    if(on)ice+=`<text x="340" y="${my+22}" font-size="13" font-weight="700" fill="#E9FF7B" font-family="Inter">tu empresa</text>`;
+    ice+=`<text x="540" y="${my+8}" text-anchor="middle" font-size="22" font-weight="600" fill="#9a9a8c" font-family="Inter">${L.mit} %</text>`;}
+  ice+='</svg>';
+  // radar
+  const R=108,cx=170,cy=162,ang=i=>-Math.PI/2+i*2*Math.PI/6,pt=(i,v)=>[cx+R*(v/4)*Math.cos(ang(i)),cy+R*(v/4)*Math.sin(ang(i))];
+  let rad=`<svg viewBox="0 0 340 324" role="img" aria-label="Radar de tus 6 dimensiones">`;
+  for(const l of [1,2,3,4])rad+=`<polygon points="${dims.map((_,i)=>pt(i,l).join(',')).join(' ')}" fill="none" stroke="rgba(255,255,255,${l===4?.25:.1})"/>`;
+  rad+=`<polygon points="${dims.map((d,i)=>pt(i,d.prom).join(',')).join(' ')}" fill="rgba(233,255,123,.25)" stroke="#E9FF7B" stroke-width="2.5"/>`;
+  dims.forEach((d,i)=>{const [x,y]=pt(i,5.1);const c=!parejo&&d===debil?'#ff6b5b':(!parejo&&d===fuerte?'#E9FF7B':'#dcdcd2');
+    rad+=`<text x="${x}" y="${y-4}" text-anchor="middle" font-size="12.5" font-weight="600" fill="${c}" font-family="Inter">${d.nombre}</text><text x="${x}" y="${y+12}" text-anchor="middle" font-size="12" fill="#9a9a8c" font-family="Inter">${dec(d.prom)}</text>`});
+  rad+='</svg>';
+  app.innerHTML=`<img class="logo" src="logo-30x.svg" alt="30X">
+  <div><p class="k">Liderar la AI · tu diagnóstico</p><h1>${nombre?esc(nombre)+', este':'Este'} es el nivel de AI de tu empresa</h1></div>
+  <div class="card"><div class="lvl">${nivel} · ${esc(N.nombre)}</div><div class="pts">${total} de 60 puntos</div>
+  ${esl&&total>=26?`<div class="alert"><b>${esc(D.eslabon)}</b><span>${bruto>2?`Tus puntos daban para el nivel ${bruto}, pero `:''}Liderazgo o Gobernanza promedian menos de 2, y así la empresa no pasa del nivel 2.</span></div>`:''}
+  <p class="msg">${esc(N.msg)}</p></div>
+  <div class="card"><p class="k">Tu lugar en el iceberg · % de empresas por nivel</p>${ice}<p class="fine">Fuente: MIT CISR, Enterprise AI Maturity Model (2024): 28 % en el nivel 1, 34 % en el 2, 31 % en el 3 y 7 % en el 4.</p></div>
+  <div class="card"><p class="k">Tus 6 dimensiones · de 1 a 4</p>${rad}
+  ${parejo?`<p class="msg" style="font-size:16px">Tus seis dimensiones están parejas.</p>`:`<div class="two"><div class="pill f"><div class="t">Tu dimensión más fuerte</div><div class="v">${esc(fuerte.nombre)} · ${dec(fuerte.prom)}</div></div><div class="pill d"><div class="t">Tu dimensión más débil</div><div class="v">${esc(debil.nombre)} · ${dec(debil.prom)}</div></div></div>`}</div>
+  <div class="card"><p class="msg" style="margin-top:0;font-weight:600">En el workshop te mostramos cómo subir un nivel.</p>
+  <a class="cta" href="${D.curso}">Conocé AI Transformation for Enterprises</a></div>
+  <p class="fine">Diagnóstico de Pablo Guzzi (ex Chief Data &amp; AI Officer de Ualá) para el workshop Liderar la AI de 30X. Tus respuestas viajan solo en este enlace.</p>`;
+}
+</script>
+</body>
+</html>
