@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 99,
+  "n": 102,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -18,13 +18,13 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 52,
+    "sala": 50,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 19,
+    "sala": 21,
     "mit": 31
    },
    {
@@ -81,19 +81,19 @@
    }
   ],
   "eslabon": {
-   "pct": 63,
+   "pct": 62,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 30
+    "pct": 29
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 21
+    "pct": 22
    },
    {
     "id": "retorno",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 99,
+   "n": 102,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -160,13 +160,13 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 52,
+     "sala": 50,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 19,
+     "sala": 21,
      "mit": 31
     },
     {
@@ -223,19 +223,19 @@
     }
    ],
    "eslabon": {
-    "pct": 63,
+    "pct": 62,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 30
+     "pct": 29
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 21
+     "pct": 22
     },
     {
      "id": "retorno",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:36:29Z"
+ "actualizado": "2026-11-24T23:38:33Z"
 }
