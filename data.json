@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 97,
+  "n": 98,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -18,13 +18,13 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 51,
+    "sala": 52,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 19,
+    "sala": 18,
     "mit": 31
    },
    {
@@ -47,7 +47,7 @@
    {
     "id": "ado",
     "nombre": "Adopción",
-    "promedio": 2.3,
+    "promedio": 2.2,
     "floja": false,
     "fuerte": true
    },
@@ -98,7 +98,7 @@
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 21
+    "pct": 20
    },
    {
     "id": "dueno",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 19
+    "pct": 20
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 97,
+   "n": 98,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -160,13 +160,13 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 51,
+     "sala": 52,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 19,
+     "sala": 18,
      "mit": 31
     },
     {
@@ -189,7 +189,7 @@
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": 2.3,
+     "promedio": 2.2,
      "floja": false,
      "fuerte": true
     },
@@ -240,7 +240,7 @@
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 21
+     "pct": 20
     },
     {
      "id": "dueno",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 19
+     "pct": 20
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:34:24Z"
+ "actualizado": "2026-11-24T23:35:27Z"
 }
