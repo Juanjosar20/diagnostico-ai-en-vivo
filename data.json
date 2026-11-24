@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 4,
+  "n": 0,
   "inscritos": 1177,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 25,
+    "sala": 0,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 50,
+    "sala": 0,
     "mit": 34
    },
    {
@@ -30,74 +30,62 @@
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 25,
+    "sala": 0,
     "mit": 7
    }
   ],
-  "nivel_promedio": 2.2,
-  "puntaje_promedio": 44,
+  "nivel_promedio": null,
+  "puntaje_promedio": null,
   "dims": [
    {
     "id": "lid",
     "nombre": "Liderazgo",
-    "promedio": 1.8,
-    "floja": true,
-    "fuerte": false
+    "promedio": null
    },
    {
     "id": "ado",
     "nombre": "Adopción",
-    "promedio": 3.2,
-    "floja": false,
-    "fuerte": false
+    "promedio": null
    },
    {
     "id": "dat",
     "nombre": "Datos y tecnología",
-    "promedio": 3.1,
-    "floja": false,
-    "fuerte": false
+    "promedio": null
    },
    {
     "id": "gob",
     "nombre": "Gobernanza",
-    "promedio": 3.2,
-    "floja": false,
-    "fuerte": true
+    "promedio": null
    },
    {
     "id": "tal",
     "nombre": "Talento",
-    "promedio": 3.1,
-    "floja": false,
-    "fuerte": false
+    "promedio": null
    },
    {
     "id": "res",
     "nombre": "Resultados",
-    "promedio": 3.2,
-    "floja": false,
-    "fuerte": false
+    "promedio": null
    }
   ],
   "eslabon": {
-   "pct": 75,
-   "bajaron_pct": 50
+   "pct": 0,
+   "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 25
-   },
-   {
-    "id": "retorno",
-    "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 25
+    "pct": 0
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
+    "pct": 0
+   },
+   {
+    "id": "retorno",
+    "texto": "«No veo el retorno de lo que ya pagamos»",
     "pct": 0
    },
    {
@@ -108,34 +96,34 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 25
+    "pct": 0
    },
    {
     "id": "otra",
     "texto": "Otra frase (la escribieron ellos)",
-    "pct": 25
+    "pct": 0
    }
   ],
   "tamano": [
    {
     "id": "menos_50",
     "texto": "Menos de 50",
-    "pct": 25
+    "pct": 0
    },
    {
     "id": "50_200",
     "texto": "50 a 200",
-    "pct": 25
+    "pct": 0
    },
    {
     "id": "200_1000",
     "texto": "200 a 1.000",
-    "pct": 25
+    "pct": 0
    },
    {
     "id": "mas_1000",
     "texto": "Más de 1.000",
-    "pct": 25
+    "pct": 0
    }
   ],
   "etiqueta": "Acumulado de las 3 sesiones"
@@ -544,5 +532,5 @@
   }
  ],
  "inscritos": 1177,
- "actualizado": "2026-11-24T00:54:30Z"
+ "actualizado": "2026-11-24T00:56:15Z"
 }
