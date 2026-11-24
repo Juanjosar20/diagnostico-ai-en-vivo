@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 1,
+  "n": 5,
   "inscritos": 1438,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 100,
+    "sala": 60,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 0,
+    "sala": 40,
     "mit": 34
    },
    {
@@ -34,8 +34,8 @@
     "mit": 7
    }
   ],
-  "nivel_promedio": 1.0,
-  "puntaje_promedio": 25,
+  "nivel_promedio": 1.4,
+  "puntaje_promedio": 26,
   "dims": [
    {
     "id": "lid",
@@ -47,14 +47,14 @@
    {
     "id": "ado",
     "nombre": "Adopción",
-    "promedio": 2.0,
+    "promedio": 1.9,
     "floja": false,
-    "fuerte": true
+    "fuerte": false
    },
    {
     "id": "dat",
     "nombre": "Datos y tecnología",
-    "promedio": 1.0,
+    "promedio": 1.4,
     "floja": true,
     "fuerte": false
    },
@@ -68,7 +68,7 @@
    {
     "id": "tal",
     "nombre": "Talento",
-    "promedio": 1.5,
+    "promedio": 1.6,
     "floja": false,
     "fuerte": false
    },
@@ -77,32 +77,32 @@
     "nombre": "Resultados",
     "promedio": 2.0,
     "floja": false,
-    "fuerte": false
+    "fuerte": true
    }
   ],
   "eslabon": {
-   "pct": 100,
+   "pct": 80,
    "bajaron_pct": 0
   },
   "frases": [
    {
-    "id": "competencia",
-    "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 100
+    "id": "retorno",
+    "texto": "«No veo el retorno de lo que ya pagamos»",
+    "pct": 40
    },
    {
-    "id": "dueno",
-    "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 0
+    "id": "competencia",
+    "texto": "«La competencia ya se está moviendo y nosotros no»",
+    "pct": 40
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 0
+    "pct": 20
    },
    {
-    "id": "retorno",
-    "texto": "«No veo el retorno de lo que ya pagamos»",
+    "id": "dueno",
+    "texto": "«¿Quién es dueño de la AI acá?»",
     "pct": 0
    },
    {
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 1,
+   "n": 5,
    "inscritos": 1438,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 100,
+     "sala": 60,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 0,
+     "sala": 40,
      "mit": 34
     },
     {
@@ -176,8 +176,8 @@
      "mit": 7
     }
    ],
-   "nivel_promedio": 1.0,
-   "puntaje_promedio": 25,
+   "nivel_promedio": 1.4,
+   "puntaje_promedio": 26,
    "dims": [
     {
      "id": "lid",
@@ -189,14 +189,14 @@
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": 2.0,
+     "promedio": 1.9,
      "floja": false,
-     "fuerte": true
+     "fuerte": false
     },
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": 1.0,
+     "promedio": 1.4,
      "floja": true,
      "fuerte": false
     },
@@ -210,7 +210,7 @@
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": 1.5,
+     "promedio": 1.6,
      "floja": false,
      "fuerte": false
     },
@@ -219,32 +219,32 @@
      "nombre": "Resultados",
      "promedio": 2.0,
      "floja": false,
-     "fuerte": false
+     "fuerte": true
     }
    ],
    "eslabon": {
-    "pct": 100,
+    "pct": 80,
     "bajaron_pct": 0
    },
    "frases": [
     {
-     "id": "competencia",
-     "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 100
+     "id": "retorno",
+     "texto": "«No veo el retorno de lo que ya pagamos»",
+     "pct": 40
     },
     {
-     "id": "dueno",
-     "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 0
+     "id": "competencia",
+     "texto": "«La competencia ya se está moviendo y nosotros no»",
+     "pct": 40
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 0
+     "pct": 20
     },
     {
-     "id": "retorno",
-     "texto": "«No veo el retorno de lo que ya pagamos»",
+     "id": "dueno",
+     "texto": "«¿Quién es dueño de la AI acá?»",
      "pct": 0
     },
     {
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1438,
- "actualizado": "2026-11-24T23:21:44Z"
+ "actualizado": "2026-11-24T23:22:46Z"
 }
