@@ -6,87 +6,128 @@
 <title>Diagnóstico AI en vivo · 30X</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0A0A0A;--ink:#fff;--ink2:#dcdcd2;--muted:#9a9a8c;--lime:#E9FF7B;--amber:#f5c84c;--red:#ff6b5b;--track:rgba(255,255,255,.08);--line:rgba(255,255,255,.10)}
+:root{--bg:#0A0A0A;--ink:#fff;--ink2:#d9d9cf;--muted:#8f8f83;--lime:#E9FF7B;--red:#ff6b5b;--amber:#f5c84c;--track:rgba(255,255,255,.07);--line:rgba(255,255,255,.10);--card:rgba(14,14,14,.72)}
 *{box-sizing:border-box}
-html,body{margin:0;color:rgba(255,255,255,.88);font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss01"}
-body{min-height:100vh;background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.82) 75%),url(shader-30x.jpg) center top/cover no-repeat fixed,#0A0A0A}
-.wrap{max-width:1680px;margin:0 auto;padding:18px 32px 14px;display:flex;flex-direction:column;gap:14px;min-height:100vh}
+html,body{margin:0;color:var(--ink2);font-family:"Inter",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"cv11","ss01"}
+body{min-height:100vh;background:linear-gradient(180deg,rgba(10,10,10,.45),rgba(10,10,10,.88) 70%),url(shader-30x.jpg) center top/cover no-repeat fixed,#0A0A0A}
+.wrap{max-width:1760px;margin:0 auto;padding:22px 36px 16px;display:flex;flex-direction:column;gap:16px;min-height:100vh}
 header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
-.eyebrow,.k{font-family:"Geist Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.08em;font-size:12px;text-transform:uppercase;color:var(--lime)}
-.logo30{height:26px;width:auto;vertical-align:middle}
-h1{font-size:44px;line-height:1.04;margin:8px 0 0;font-weight:600;letter-spacing:-.045em;color:#fff}
+.mono{font-family:"Geist Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.1em;font-size:12px;text-transform:uppercase;color:var(--lime)}
+.logo30{height:28px;width:auto;vertical-align:middle}
+h1{font-size:52px;line-height:1;margin:12px 0 0;font-weight:700;letter-spacing:-.045em;color:#fff}
 h1 em{font-style:normal;color:var(--lime)}
-.tabs{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
-.tabs a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(12,12,12,.5)}
-.tabs a.on{background:var(--lime);color:#0A0A0A;border-color:var(--lime)}
 .count{text-align:right;flex-shrink:0}
-.count .n{font-size:96px;line-height:.85;font-weight:600;color:var(--lime);letter-spacing:-.05em;font-variant-numeric:tabular-nums}
-.count .lbl{font-size:18px;color:var(--ink2);margin-top:8px}
-.live{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-top:4px}
+.count .n{font-size:110px;line-height:.82;font-weight:700;color:var(--lime);letter-spacing:-.055em;font-variant-numeric:tabular-nums}
+.count .lbl{font-size:18px;color:var(--ink2);margin-top:10px}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-top:6px}
 .dot{width:10px;height:10px;border-radius:50%;background:var(--lime);animation:p 2s infinite}
 @keyframes p{0%{box-shadow:0 0 0 0 rgba(233,255,123,.5)}70%{box-shadow:0 0 0 12px rgba(233,255,123,0)}100%{box-shadow:0 0 0 0 rgba(233,255,123,0)}}
-.grid{display:grid;grid-template-columns:1.3fr 1.1fr .72fr;gap:14px}
-.card{background:rgba(12,12,12,.64);border:1px solid var(--line);border-radius:16px;padding:18px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);min-width:0}
-.k{margin:0 0 10px}
-.avg{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
-.avg .v{font-size:64px;font-weight:600;color:#fff;letter-spacing:-.04em;line-height:1}
-.avg .v small{font-size:24px;color:var(--muted);font-weight:500;letter-spacing:0}
-.avg .s{font-size:16px;color:var(--ink2)}
-svg{display:block;width:100%;height:auto}
-.rows{display:flex;flex-direction:column;gap:12px}
-.row{display:grid;grid-template-columns:170px 1fr 52px;align-items:center;gap:12px}
-.row .lab{font-size:18px;color:var(--ink2);line-height:1.1}
-.row .val{font-size:24px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
-.track{height:22px;background:var(--track);border-radius:11px;overflow:hidden;position:relative}
-.fill{height:100%;border-radius:11px;transition:width .8s cubic-bezier(.16,1,.3,1)}
-.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:6px;margin-left:6px;vertical-align:2px}
-.tag.r{background:var(--red);color:#0A0A0A}.tag.l{background:var(--lime);color:#0A0A0A}
-.scale{display:grid;grid-template-columns:170px 1fr 52px;gap:12px;font-size:12px;color:var(--muted);margin-top:6px}
-.scale div:nth-child(2){display:flex;justify-content:space-between}
-.qr{text-align:center}
-.qr img{width:100%;max-width:230px;border-radius:14px;background:#fff;padding:10px;display:block;margin:4px auto 10px}
-.qr .bigt{font-size:24px;font-weight:600;color:#fff}
+.grid{display:grid;gap:16px}
+.g1{grid-template-columns:.82fr 1.75fr .72fr}
+.g2{grid-template-columns:1.15fr 1.15fr .95fr}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 26px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);min-width:0;display:flex;flex-direction:column}
+.card>.mono{margin:0 0 14px}
+.empty{color:var(--muted);font-size:18px;margin:auto 0}
+/* Nivel de la sala */
+.gauge{position:relative;width:100%;max-width:300px;margin:4px auto 0}
+.gauge svg{display:block;width:100%;height:auto}
+.gauge .num{position:absolute;left:0;right:0;bottom:0;text-align:center;display:flex;flex-direction:column;align-items:center;gap:6px}
+.gauge .num b{display:block;font-size:76px;line-height:.9;font-weight:700;color:#fff;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.gauge .num span{font-size:20px;color:var(--muted);font-weight:500}
+.verdict{text-align:center;margin-top:14px;font-size:22px;color:#fff;font-weight:600;line-height:1.2}
+.verdict em{font-style:normal;color:var(--lime)}
+.sub{text-align:center;font-size:15px;color:var(--muted);margin-top:6px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:16px}
+.stat{background:rgba(255,255,255,.035);border-radius:14px;padding:12px 14px}
+.stat b{display:block;font-size:30px;font-weight:700;color:#fff;letter-spacing:-.03em}
+.stat b.r{color:var(--red)}
+.stat span{font-size:13px;color:var(--muted);line-height:1.25;display:block;margin-top:2px}
+/* Los 4 niveles */
+.lvhead{display:grid;grid-template-columns:56px 1fr 120px 92px;gap:16px;align-items:end;padding:0 18px 8px}
+.lvhead span{font-family:"Geist Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+.lvhead span:nth-child(3),.lvhead span:nth-child(4){text-align:right}
+.lv{display:grid;grid-template-columns:56px 1fr 120px 92px;gap:16px;align-items:center;padding:12px 18px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid transparent}
+.lv+.lv{margin-top:8px}
+.lv .k{font-size:34px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:-.03em;text-align:center}
+.lv .nm{font-size:21px;font-weight:700;color:#fff;margin-bottom:8px}
+.lv .bar{position:relative;height:14px;background:var(--track);border-radius:7px}
+.lv .fill{position:absolute;left:0;top:0;bottom:0;border-radius:7px;background:rgba(255,255,255,.55);transition:width .9s cubic-bezier(.16,1,.3,1)}
+.lv .mit{position:absolute;top:-5px;bottom:-5px;width:3px;border-radius:2px;background:#7fb3ff;transform:translateX(-1.5px);transition:left .9s cubic-bezier(.16,1,.3,1)}
+.lv .pct{font-size:44px;font-weight:700;color:#fff;letter-spacing:-.04em;text-align:right;font-variant-numeric:tabular-nums;line-height:1}
+.lv .ref{font-size:22px;font-weight:600;color:#7fb3ff;text-align:right;font-variant-numeric:tabular-nums}
+.lv.on{background:var(--lime);border-color:var(--lime)}
+.lv.on .k,.lv.on .nm,.lv.on .pct{color:#0A0A0A}
+.lv.on .bar{background:rgba(10,10,10,.14)}
+.lv.on .fill{background:#0A0A0A}
+.lv.on .ref{color:#1f3a66}
+.lv.on .mit{background:#1f3a66}
+.water{display:flex;align-items:center;gap:14px;margin:12px 0 4px;font-family:"Geist Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#7fb3ff}
+.water:before,.water:after{content:"";flex:1;border-top:2px dashed rgba(127,179,255,.45)}
+.water b{color:#fff;font-weight:500}
+.legend{display:flex;gap:22px;margin-top:auto;padding-top:12px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:8px;border-radius:4px;background:rgba(255,255,255,.55);margin-right:7px;vertical-align:1px}
+.legend i.m{width:3px;height:14px;background:#7fb3ff;vertical-align:-3px}
+/* QR */
+.qr{text-align:center;align-items:center}
+.qr img{width:100%;max-width:240px;border-radius:16px;background:#fff;padding:12px;display:block;margin:2px auto 14px}
+.qr .bigt{font-size:30px;font-weight:700;color:#fff;letter-spacing:-.02em}
+.qr .t2{font-size:15px;color:var(--ink2);margin:4px 0 8px}
 .qr .url{font-size:12px;color:var(--muted);word-break:break-all}
-.chips{display:flex;flex-direction:column;gap:9px}
-.chip{display:flex;justify-content:space-between;align-items:center;gap:14px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:14px;padding:11px 16px;font-size:19px;color:var(--ink2);font-weight:600;line-height:1.2}
-.chip b{font-size:32px;color:var(--lime);font-weight:600;letter-spacing:-.03em;white-space:nowrap}
-.chip.top{background:var(--lime);color:#0A0A0A;border-color:var(--lime);font-size:23px;padding:16px 18px}
-.chip.top b{color:#0A0A0A;font-size:46px}
-.big{font-size:88px;font-weight:600;color:var(--lime);letter-spacing:-.05em;line-height:.95}
-.txt{font-size:19px;line-height:1.3;color:var(--ink2);margin-top:8px}
-.quote{font-size:18px;line-height:1.3;font-weight:600;padding:8px 0 8px 14px;border-left:4px solid var(--lime);margin-top:12px;color:#fff}
+/* Frases */
+.chips{display:flex;flex-direction:column;gap:10px}
+.chip{display:flex;justify-content:space-between;align-items:center;gap:16px;background:rgba(255,255,255,.035);border-radius:14px;padding:12px 18px;font-size:19px;color:var(--ink2);font-weight:600;line-height:1.2}
+.chip b{font-size:30px;color:#fff;font-weight:700;letter-spacing:-.03em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.chip.top{background:var(--lime);color:#0A0A0A;font-size:24px;padding:18px 20px}
+.chip.top b{color:#0A0A0A;font-size:50px}
+/* Dimensiones */
+.rows{display:flex;flex-direction:column;gap:13px}
+.row{display:grid;grid-template-columns:190px 1fr 56px;align-items:center;gap:14px}
+.row .lab{font-size:19px;color:#fff;font-weight:600;line-height:1.1}
+.row .lab small{display:block;font-size:11px;font-family:"Geist Mono",monospace;letter-spacing:.1em;color:var(--red);margin-top:3px;font-weight:500}
+.row .val{font-size:26px;font-weight:700;text-align:right;color:#fff;font-variant-numeric:tabular-nums}
+.track{height:16px;background:var(--track);border-radius:8px;overflow:hidden;position:relative}
+.track .f{height:100%;border-radius:8px;background:var(--lime);transition:width .9s cubic-bezier(.16,1,.3,1)}
+.track .two{position:absolute;top:0;bottom:0;left:33.33%;border-left:1px dashed rgba(255,255,255,.3)}
+.scale{display:grid;grid-template-columns:190px 1fr 56px;gap:14px;font-size:12px;color:var(--muted);margin-top:8px;font-family:"Geist Mono",monospace}
+.scale div:nth-child(2){display:flex;justify-content:space-between}
+/* Eslabón */
+.big{font-size:104px;font-weight:700;color:var(--lime);letter-spacing:-.055em;line-height:.9;font-variant-numeric:tabular-nums}
+.txt{font-size:20px;line-height:1.3;color:var(--ink2);margin-top:12px}
+.txt b{color:#fff}
+.quote{font-size:19px;line-height:1.3;font-weight:600;padding:10px 0 10px 16px;border-left:4px solid var(--lime);margin-top:auto;color:#fff}
 .fine{font-size:12px;color:var(--muted);line-height:1.4}
-.empty{color:var(--muted);font-size:18px}
-@media (max-width:1100px){.grid{grid-template-columns:1fr 1fr}}
-@media (max-width:720px){.grid{grid-template-columns:1fr}.wrap{padding:16px}header{flex-direction:column;align-items:flex-start}.count{text-align:left}h1{font-size:30px}.row,.scale{grid-template-columns:110px 1fr 44px}.row .lab{font-size:15px}.big{font-size:64px}}
+@media (max-width:1200px){.g1,.g2{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.g1,.g2{grid-template-columns:1fr}.wrap{padding:16px}header{flex-direction:column;align-items:flex-start}.count{text-align:left}h1{font-size:32px}.count .n{font-size:72px}
+  .lv,.lvhead{grid-template-columns:36px 1fr 70px 56px;gap:10px;padding-left:12px;padding-right:12px}.lv .pct{font-size:30px}.lv .ref{font-size:17px}.lv .nm{font-size:17px}
+  .row,.scale{grid-template-columns:120px 1fr 44px}.row .lab{font-size:15px}.big{font-size:72px}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div>
-      <div class="eyebrow"><img class="logo30" src="logo-30x.svg" alt="30X"> &nbsp;·&nbsp; Liderar la AI · Diagnóstico en vivo · <span id="dialbl">–</span></div>
+      <div class="mono"><img class="logo30" src="logo-30x.svg" alt="30X"> &nbsp;·&nbsp; Liderar la AI · Diagnóstico en vivo</div>
       <h1>¿En qué nivel de <em>AI</em> está esta sala?</h1>
-      <nav class="tabs" id="tabs"></nav>
     </div>
     <div class="count"><div class="n" id="n">0</div><div class="lbl" id="nlbl">diagnósticos</div><div class="live"><span class="dot"></span><span id="upd">en vivo</span></div></div>
   </header>
-  <div class="grid">
-    <section class="card"><p class="k">El iceberg de la sala · nivel 1 a 4</p>
-      <div class="avg"><div class="v" id="avg">–</div><div class="s" id="avgs">Esperando respuestas…</div></div>
-      <div id="ice"></div></section>
-    <section class="card"><p class="k">Las 6 dimensiones · promedio de 1 a 4</p><div class="rows" id="dims"><div class="empty">Esperando las primeras respuestas…</div></div>
+
+  <div class="grid g1">
+    <section class="card"><p class="mono">Nivel de la sala</p><div id="nivel"><div class="empty">Esperando respuestas…</div></div></section>
+    <section class="card"><p class="mono">Dónde está la sala · contra las empresas del estudio de MIT</p><div id="lvls"></div>
+      <div class="legend"><span><i></i>Esta sala</span><span><i class="m"></i>MIT CISR (2024)</span></div></section>
+    <section class="card qr"><p class="mono">Respondé desde tu celular</p><img src="qr.png" alt="Código QR del diagnóstico"><div class="bigt">4 minutos</div><div class="t2">al terminar ves tu nivel</div><div class="url">form.30x.com/to/cmwtw1iou0x7201s6i8yzh557</div></section>
+  </div>
+
+  <div class="grid g2">
+    <section class="card"><p class="mono">La frase del comité más elegida</p><div class="chips" id="frases"><div class="empty">–</div></div></section>
+    <section class="card"><p class="mono">Las 6 dimensiones · promedio de 1 a 4</p><div class="rows" id="dims"><div class="empty">Esperando respuestas…</div></div>
       <div class="scale"><div></div><div><span>1</span><span>2</span><span>3</span><span>4</span></div><div></div></div></section>
-    <section class="card qr"><p class="k">Respondé desde tu celular</p><img src="qr.png" alt="Código QR del diagnóstico"><div class="bigt">4 minutos</div><div class="url" style="font-size:14px;margin-bottom:4px">al terminar ves tu nivel en el celular</div><div class="url">form.30x.com/to/cmwtw1iou0x7201s6i8yzh557</div></section>
+    <section class="card"><p class="mono">Regla del eslabón débil</p><div id="esl" style="display:flex;flex-direction:column;flex:1"><div class="empty">–</div></div></section>
   </div>
-  <div class="grid">
-    <section class="card"><p class="k">La frase del comité más elegida · la que escribiste en el chat</p><div class="chips" id="frases"><div class="empty">–</div></div></section>
-    <section class="card"><p class="k">Regla del eslabón débil</p><div id="esl"><div class="empty">–</div></div></section>
-    <section class="card"><p class="k">Tamaño de empresa · personas</p><div class="rows" id="tam"><div class="empty">–</div></div></section>
-  </div>
-  <div class="fine">Solo datos agregados y anónimos, sin nombres ni correos. Una respuesta por correo. Nivel calculado con la regla del eslabón débil (si Liderazgo o Gobernanza promedian menos de 2, el nivel no pasa de 2). Referencia: % de empresas por nivel según MIT CISR, Enterprise AI Maturity Model (2024).</div>
+  <div class="fine">Solo datos agregados y anónimos, sin nombres ni correos. Una respuesta por correo. Acumulado de las sesiones del workshop. Nivel calculado con la regla del eslabón débil (si Liderazgo o Gobernanza promedian menos de 2, el nivel no pasa de 2). Referencia: % de empresas por nivel según MIT CISR, Enterprise AI Maturity Model (2024).</div>
 </div>
 <script>
 const DATA_URL=new URLSearchParams(location.search).get('data')||window.DATA_URL||'data.json';
@@ -95,60 +136,58 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const fmt=n=>Number(n).toLocaleString('es-CO');
 const dec=n=>Number(n).toLocaleString('es-CO',{minimumFractionDigits:1,maximumFractionDigits:1});
 const NOMBRES={1:'Experimentar',2:'Pilotos',3:'Escalar',4:'AI en el core'};
-function hoyCol(){const t=new Date(Date.now()-5*3600e3);return t.toISOString().slice(0,10)}
+const MIT={1:28,2:34,3:31,4:7};
 let last=null;
-function diaSel(d){
-  const q=new URLSearchParams(location.search).get('dia');
-  const ids=(d.dias||[]).map(x=>x.id);
-  if(q==='todo'||q==='acumulado')return 'todo';
-  if(q){const m=ids.find(id=>id===q||id.endsWith('-'+q.padStart(2,'0')));if(m)return m}
-  const h=hoyCol();return ids.includes(h)?h:'todo';
+
+function gauge(avg){
+  // semicírculo de 1 a 4
+  const R=120,cx=150,cy=150,t=Math.max(0,Math.min(1,(avg-1)/3));
+  const pt=a=>[cx+R*Math.cos(Math.PI*(1-a)),cy-R*Math.sin(Math.PI*(1-a))];
+  const [x0,y0]=pt(0),[x1,y1]=pt(1),[xv,yv]=pt(t);
+  const col=avg<2?'var(--red)':avg<3?'var(--amber)':'var(--lime)';
+  let ticks='';for(let i=0;i<=3;i++){const a=i/3,[xa,ya]=[cx+(R+24)*Math.cos(Math.PI*(1-a)),cy-(R+24)*Math.sin(Math.PI*(1-a))];ticks+=`<text x="${xa}" y="${ya+5}" text-anchor="middle" font-size="14" fill="#8f8f83" font-family="Geist Mono,monospace">${i+1}</text>`}
+  return `<svg viewBox="0 0 300 160" aria-hidden="true"><path d="M${x0},${y0} A${R},${R} 0 0 1 ${x1},${y1}" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="22" stroke-linecap="round"/>`+
+    (t>0?`<path d="M${x0},${y0} A${R},${R} 0 0 1 ${xv},${yv}" fill="none" stroke="${col}" stroke-width="22" stroke-linecap="round"/>`:'')+ticks+`</svg>`;
 }
-function tabs(d,sel){
-  const p=new URLSearchParams(location.search);
-  const mk=(id,lab)=>{p.set('dia',id==='todo'?'todo':id.slice(-2));return `<a href="?${p.toString()}" class="${sel===id?'on':''}">${esc(lab)}</a>`};
-  $('tabs').innerHTML=(d.dias||[]).map(x=>mk(x.id,x.etiqueta)).join('')+mk('todo','Acumulado');
+function nivelCard(a,n){
+  if(!n)return '<div class="empty">Esperando respuestas…</div>';
+  const r=Math.min(4,Math.max(1,Math.floor(a.nivel_promedio+1e-9)));
+  const floja=(a.dims||[]).find(x=>x.floja);
+  const lv=Object.fromEntries((a.niveles||[]).map(x=>[x.nivel,x]));const arr=((lv[1]||{}).sala||0)+((lv[2]||{}).sala||0);
+  return `<div class="gauge">${gauge(a.nivel_promedio)}<div class="num"><b>${dec(a.nivel_promedio)}</b><span>de 4</span></div></div>
+    <div class="verdict">La sala está en <em>${NOMBRES[r]}</em></div>
+    <div class="sub">${a.puntaje_promedio} de 60 puntos en promedio</div>
+    <div class="stats"><div class="stat"><b>${arr} %</b><span>en los niveles 1 y 2</span></div>${floja?`<div class="stat"><b class="r">${dec(floja.promedio)}</b><span>${esc(floja.nombre)}, la más floja</span></div>`:''}</div>`;
 }
-function iceberg(a,n){
-  // banda 4 arriba (sobre el agua), 1 abajo (la más ancha)
-  const B=[{k:4,y:6,h:58,t:40,b:120},{k:3,y:80,h:76,t:132,b:220},{k:2,y:160,h:84,t:228,b:318},{k:1,y:248,h:88,t:326,b:404}];
-  const cx=150,avg=n?a.nivel_promedio:null,sel=n?Math.min(4,Math.max(1,Math.round(avg))):null;
+function niveles(a,n){
   const lv=Object.fromEntries((a.niveles||[]).map(x=>[x.nivel,x]));
-  let s=`<svg viewBox="0 0 760 344" role="img" aria-label="Iceberg de niveles de AI de la sala"><line x1="0" y1="72" x2="300" y2="72" stroke="#7fb3ff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="6 6"/><text x="4" y="90" font-size="11" fill="#7fb3ff" fill-opacity=".8" font-family="Geist Mono,monospace">LÍNEA DE AGUA</text>`;
-  s+=`<text x="560" y="14" font-size="12" fill="#9a9a8c" font-family="Geist Mono,monospace" text-anchor="middle">SALA</text><text x="690" y="14" font-size="12" fill="#9a9a8c" font-family="Geist Mono,monospace" text-anchor="middle">MIT CISR</text>`;
-  for(const b of B){
-    const on=b.k===sel,x=lv[b.k]||{sala:0,mit:''};
-    const p=`${cx-b.t/2},${b.y} ${cx+b.t/2},${b.y} ${cx+b.b/2},${b.y+b.h} ${cx-b.b/2},${b.y+b.h}`;
-    s+=`<polygon points="${p}" fill="${on?'#E9FF7B':(b.k===4?'rgba(255,255,255,.22)':'rgba(127,179,255,'+(0.10+0.05*(4-b.k))+')')}" stroke="${on?'#E9FF7B':'rgba(255,255,255,.25)'}" stroke-width="1.5"/>`;
-    const my=b.y+b.h/2;
-    s+=`<text x="${cx}" y="${my+7}" text-anchor="middle" font-size="20" font-weight="700" fill="${on?'#0A0A0A':'#fff'}" font-family="Inter">${b.k}</text>`;
-    s+=`<text x="372" y="${my+7}" font-size="20" font-weight="600" fill="${on?'#E9FF7B':'#dcdcd2'}" font-family="Inter">${on?'▸ ':''}${NOMBRES[b.k]}</text>`;
-    s+=`<text x="560" y="${my+11}" text-anchor="middle" font-size="34" font-weight="700" fill="${on?'#E9FF7B':'#fff'}" font-family="Inter">${n?x.sala+' %':'–'}</text>`;
-    s+=`<text x="690" y="${my+8}" text-anchor="middle" font-size="22" font-weight="600" fill="#9a9a8c" font-family="Inter">${x.mit} %</text>`;
+  let top=null;if(n){top=[1,2,3,4].reduce((m,k)=>((lv[k]||{}).sala||0)>((lv[m]||{}).sala||0)?k:m,1)}
+  const arriba=n?((lv[1]||{}).sala||0)+((lv[2]||{}).sala||0):null;
+  const mitArriba=MIT[1]+MIT[2];
+  let h=`<div class="lvhead"><span>Nivel</span><span></span><span>Sala</span><span>MIT</span></div>`;
+  for(const k of [1,2,3,4]){
+    const x=lv[k]||{sala:0,mit:MIT[k]},s=n?x.sala:0,m=x.mit??MIT[k];
+    h+=`<div class="lv${k===top?' on':''}"><div class="k">${k}</div><div><div class="nm">${NOMBRES[k]}</div><div class="bar"><div class="fill" style="width:${s}%"></div><div class="mit" style="left:${m}%"></div></div></div><div class="pct">${n?s+' %':'–'}</div><div class="ref">${m} %</div></div>`;
+    if(k===2)h+=`<div class="water">Línea de flotación · <b>${n?arriba+' %':'–'}</b> de la sala se queda arriba · MIT ${mitArriba} %</div>`;
   }
-  return s+'</svg>';
+  return h;
 }
 function render(d){
-  const sel=diaSel(d);tabs(d,sel);
-  const a=sel==='todo'?d.total:(d.por_dia||{})[sel];
-  if(!a)return;
+  const a=d.total;if(!a)return;
   const n=a.n||0;
-  $('dialbl').textContent=a.etiqueta||'';
   $('n').textContent=fmt(n);
-  $('nlbl').textContent=d.inscritos?`diagnósticos · de ${fmt(d.inscritos)} inscritos`:'diagnósticos';
+  const ins=d.inscritos||a.inscritos;
+  $('nlbl').textContent=ins?`diagnósticos · de ${fmt(ins)} inscritos`:'diagnósticos';
   if(d.actualizado){const t=new Date(d.actualizado);$('upd').textContent='en vivo · '+t.toLocaleTimeString('es-CO',{hour:'2-digit',minute:'2-digit'})}
-  $('avg').innerHTML=n?`${dec(a.nivel_promedio)} <small>de 4</small>`:'–';
-  $('avgs').textContent=n?`Nivel promedio de la sala · ${a.puntaje_promedio} de 60 puntos`:'Esperando respuestas…';
-  $('ice').innerHTML=iceberg(a,n);
-  $('dims').innerHTML=n?a.dims.map(x=>{const c=x.floja?'var(--red)':'var(--lime)';return `<div class="row"><div class="lab">${esc(x.nombre)}${x.floja?'<br><span class="tag r" style="margin:4px 0 0">la más floja</span>':''}</div><div class="track"><div class="fill" style="width:${Math.max((x.promedio-1)/3*100,2)}%;background:${c}"></div></div><div class="val" style="color:${x.floja?'var(--red)':'#fff'}">${dec(x.promedio)}</div></div>`}).join(''):'<div class="empty">Esperando las primeras respuestas…</div>';
-  const fr=(a.frases||[]);
-  $('frases').innerHTML=n?fr.map((f,i)=>`<div class="chip${i===0&&f.id!=='ninguna'?' top':''}"><span>${esc(f.texto)}</span><b>${f.pct} %</b></div>`).join(''):'<div class="empty">–</div>';
+  $('nivel').innerHTML=nivelCard(a,n);
+  $('lvls').innerHTML=niveles(a,n);
+  $('dims').innerHTML=n?a.dims.map(x=>`<div class="row"><div class="lab">${esc(x.nombre)}${x.floja?'<small>LA MÁS FLOJA</small>':''}</div><div class="track"><div class="f" style="width:${Math.max((x.promedio-1)/3*100,2)}%;background:${x.floja?'var(--red)':'var(--lime)'}"></div><div class="two"></div></div><div class="val" style="color:${x.floja?'var(--red)':'#fff'}">${dec(x.promedio)}</div></div>`).join(''):'<div class="empty">Esperando respuestas…</div>';
+  const fr=(a.frases||[]).filter(f=>f.id!=='ninguna').slice(0,4);
+  $('frases').innerHTML=n?fr.map((f,i)=>`<div class="chip${i===0?' top':''}"><span>${esc(f.texto)}</span><b>${f.pct} %</b></div>`).join(''):'<div class="empty">–</div>';
   const e=a.eslabon||{};
-  $('esl').innerHTML=n?`<div class="big">${e.pct} %</div><div class="txt">de la sala tiene <b style="color:#fff">Liderazgo o Gobernanza</b> por debajo de 2: sin dueño o sin reglas, no pasa del nivel 2.</div>${e.bajaron_pct?`<div class="txt" style="font-size:16px;color:var(--muted)">${e.bajaron_pct} % sumaba puntos de nivel 3 o 4 y quedó en 2 por esta regla.</div>`:''}<div class="quote">«Usás mucha AI, pero sin dueño o sin reglas no escala.»</div>`:'<div class="empty">–</div>';
-  $('tam').innerHTML=n?(a.tamano||[]).map(t=>`<div class="row" style="grid-template-columns:120px 1fr 52px"><div class="lab" style="font-size:16px">${esc(t.texto)}</div><div class="track"><div class="fill" style="width:${Math.max(t.pct,2)}%;background:var(--lime)"></div></div><div class="val" style="font-size:20px">${t.pct} %</div></div>`).join(''):'<div class="empty">–</div>';
+  $('esl').innerHTML=n?`<div class="big">${e.pct} %</div><div class="txt">tiene <b>Liderazgo o Gobernanza</b> por debajo de 2: sin dueño o sin reglas, no pasa del nivel 2.</div><div class="quote">«Usás mucha AI, pero sin dueño o sin reglas no escala.»</div>`:'<div class="empty">–</div>';
 }
 async function tick(){try{const r=await fetch(DATA_URL+(DATA_URL.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(r.ok){last=await r.json();render(last)}}catch(e){}}
-window.addEventListener('popstate',()=>last&&render(last));
 tick();setInterval(tick,20000);
 </script>
 </body>
