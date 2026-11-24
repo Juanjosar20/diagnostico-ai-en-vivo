@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 105,
+  "n": 106,
   "inscritos": 1446,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 27,
+    "sala": 26,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 48,
+    "sala": 49,
     "mit": 34
    },
    {
@@ -81,14 +81,14 @@
    }
   ],
   "eslabon": {
-   "pct": 61,
+   "pct": 60,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 29
+    "pct": 30
    },
    {
     "id": "datos",
@@ -103,7 +103,7 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 8
+    "pct": 7
    },
    {
     "id": "ninguna",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 105,
+   "n": 106,
    "inscritos": 1446,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 27,
+     "sala": 26,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 48,
+     "sala": 49,
      "mit": 34
     },
     {
@@ -223,14 +223,14 @@
     }
    ],
    "eslabon": {
-    "pct": 61,
+    "pct": 60,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 29
+     "pct": 30
     },
     {
      "id": "datos",
@@ -245,7 +245,7 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 8
+     "pct": 7
     },
     {
      "id": "ninguna",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1446,
- "actualizado": "2026-11-24T23:43:50Z"
+ "actualizado": "2026-11-24T23:45:54Z"
 }
