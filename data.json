@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 94,
+  "n": 96,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 28,
+    "sala": 27,
     "mit": 28
    },
    {
@@ -24,7 +24,7 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 18,
+    "sala": 19,
     "mit": 31
    },
    {
@@ -75,7 +75,7 @@
    {
     "id": "res",
     "nombre": "Resultados",
-    "promedio": 2.0,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    }
@@ -93,7 +93,7 @@
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 21
+    "pct": 22
    },
    {
     "id": "retorno",
@@ -103,7 +103,7 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 8
+    "pct": 7
    },
    {
     "id": "ninguna",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 94,
+   "n": 96,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 28,
+     "sala": 27,
      "mit": 28
     },
     {
@@ -166,7 +166,7 @@
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 18,
+     "sala": 19,
      "mit": 31
     },
     {
@@ -217,7 +217,7 @@
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": 2.0,
+     "promedio": 2.1,
      "floja": false,
      "fuerte": false
     }
@@ -235,7 +235,7 @@
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 21
+     "pct": 22
     },
     {
      "id": "retorno",
@@ -245,7 +245,7 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 8
+     "pct": 7
     },
     {
      "id": "ninguna",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:32:19Z"
+ "actualizado": "2026-11-24T23:33:21Z"
 }
