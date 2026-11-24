@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 64,
-  "inscritos": 1440,
+  "n": 78,
+  "inscritos": 1438,
   "mit": {
    "1": 28,
    "2": 34,
@@ -12,29 +12,29 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 31,
+    "sala": 29,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 44,
+    "sala": 50,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 20,
+    "sala": 17,
     "mit": 31
    },
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 5,
+    "sala": 4,
     "mit": 7
    }
   ],
-  "nivel_promedio": 2.0,
+  "nivel_promedio": 1.9,
   "puntaje_promedio": 31,
   "dims": [
    {
@@ -68,7 +68,7 @@
    {
     "id": "tal",
     "nombre": "Talento",
-    "promedio": 2.0,
+    "promedio": 1.9,
     "floja": false,
     "fuerte": false
    },
@@ -81,34 +81,34 @@
    }
   ],
   "eslabon": {
-   "pct": 66,
+   "pct": 65,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 36
+    "pct": 32
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 25
+    "pct": 26
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 17
+    "pct": 18
    },
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 8
+    "pct": 6
    },
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 14
+    "pct": 18
    },
    {
     "id": "otra",
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 64,
-   "inscritos": 1440,
+   "n": 78,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -154,29 +154,29 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 31,
+     "sala": 29,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 44,
+     "sala": 50,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 20,
+     "sala": 17,
      "mit": 31
     },
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 5,
+     "sala": 4,
      "mit": 7
     }
    ],
-   "nivel_promedio": 2.0,
+   "nivel_promedio": 1.9,
    "puntaje_promedio": 31,
    "dims": [
     {
@@ -210,7 +210,7 @@
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": 2.0,
+     "promedio": 1.9,
      "floja": false,
      "fuerte": false
     },
@@ -223,34 +223,34 @@
     }
    ],
    "eslabon": {
-    "pct": 66,
+    "pct": 65,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 36
+     "pct": 32
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 25
+     "pct": 26
     },
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 17
+     "pct": 18
     },
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 8
+     "pct": 6
     },
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 14
+     "pct": 18
     },
     {
      "id": "otra",
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1440,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1440,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1440,
- "actualizado": "2026-11-24T23:26:12Z"
+ "inscritos": 1438,
+ "actualizado": "2026-11-24T23:26:58Z"
 }
