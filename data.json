@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 91,
+  "n": 92,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 26,
+    "sala": 27,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 52,
+    "sala": 51,
     "mit": 34
    },
    {
@@ -88,7 +88,7 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 31
+    "pct": 30
    },
    {
     "id": "datos",
@@ -98,7 +98,7 @@
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 21
+    "pct": 22
    },
    {
     "id": "dueno",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 91,
+   "n": 92,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 26,
+     "sala": 27,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 52,
+     "sala": 51,
      "mit": 34
     },
     {
@@ -230,7 +230,7 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 31
+     "pct": 30
     },
     {
      "id": "datos",
@@ -240,7 +240,7 @@
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 21
+     "pct": 22
     },
     {
      "id": "dueno",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:30:13Z"
+ "actualizado": "2026-11-24T23:31:16Z"
 }
