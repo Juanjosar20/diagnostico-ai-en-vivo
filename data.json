@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 102,
+  "n": 104,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -18,7 +18,7 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 50,
+    "sala": 49,
     "mit": 34
    },
    {
@@ -30,12 +30,12 @@
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 3,
+    "sala": 4,
     "mit": 7
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 31,
+  "puntaje_promedio": 32,
   "dims": [
    {
     "id": "lid",
@@ -81,7 +81,7 @@
    }
   ],
   "eslabon": {
-   "pct": 62,
+   "pct": 61,
    "bajaron_pct": 0
   },
   "frases": [
@@ -93,7 +93,7 @@
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 22
+    "pct": 21
    },
    {
     "id": "retorno",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 21
+    "pct": 22
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 102,
+   "n": 104,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -160,7 +160,7 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 50,
+     "sala": 49,
      "mit": 34
     },
     {
@@ -172,12 +172,12 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 3,
+     "sala": 4,
      "mit": 7
     }
    ],
    "nivel_promedio": 2.0,
-   "puntaje_promedio": 31,
+   "puntaje_promedio": 32,
    "dims": [
     {
      "id": "lid",
@@ -223,7 +223,7 @@
     }
    ],
    "eslabon": {
-    "pct": 62,
+    "pct": 61,
     "bajaron_pct": 0
    },
    "frases": [
@@ -235,7 +235,7 @@
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 22
+     "pct": 21
     },
     {
      "id": "retorno",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 21
+     "pct": 22
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:38:33Z"
+ "actualizado": "2026-11-24T23:39:36Z"
 }
