@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 81,
+  "n": 88,
   "inscritos": 1438,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 28,
+    "sala": 26,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 51,
+    "sala": 53,
     "mit": 34
    },
    {
@@ -61,7 +61,7 @@
    {
     "id": "gob",
     "nombre": "Gobernanza",
-    "promedio": 1.8,
+    "promedio": 1.9,
     "floja": true,
     "fuerte": false
    },
@@ -88,12 +88,12 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 31
+    "pct": 32
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 25
+    "pct": 23
    },
    {
     "id": "retorno",
@@ -103,7 +103,7 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 6
+    "pct": 7
    },
    {
     "id": "ninguna",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 81,
+   "n": 88,
    "inscritos": 1438,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 28,
+     "sala": 26,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 51,
+     "sala": 53,
      "mit": 34
     },
     {
@@ -203,7 +203,7 @@
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": 1.8,
+     "promedio": 1.9,
      "floja": true,
      "fuerte": false
     },
@@ -230,12 +230,12 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 31
+     "pct": 32
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 25
+     "pct": 23
     },
     {
      "id": "retorno",
@@ -245,7 +245,7 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 6
+     "pct": 7
     },
     {
      "id": "ninguna",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1438,
- "actualizado": "2026-11-24T23:28:00Z"
+ "actualizado": "2026-11-24T23:29:03Z"
 }
