@@ -81,6 +81,7 @@ h1 em{font-style:normal;color:var(--lime)}
 .chip b{font-size:30px;color:#fff;font-weight:700;letter-spacing:-.03em;white-space:nowrap;font-variant-numeric:tabular-nums}
 .chip.top{background:var(--lime);color:#0A0A0A;font-size:24px;padding:18px 20px}
 .chip.top b{color:#0A0A0A;font-size:50px}
+.otra{font-size:15px;color:var(--muted);padding:2px 4px}
 /* Dimensiones */
 .rows{display:flex;flex-direction:column;gap:13px}
 .row{display:grid;grid-template-columns:190px 1fr 56px;align-items:center;gap:14px}
@@ -182,8 +183,9 @@ function render(d){
   $('nivel').innerHTML=nivelCard(a,n);
   $('lvls').innerHTML=niveles(a,n);
   $('dims').innerHTML=n?a.dims.map(x=>`<div class="row"><div class="lab">${esc(x.nombre)}${x.floja?'<small>LA MÁS FLOJA</small>':''}</div><div class="track"><div class="f" style="width:${Math.max((x.promedio-1)/3*100,2)}%;background:${x.floja?'var(--red)':'var(--lime)'}"></div><div class="two"></div></div><div class="val" style="color:${x.floja?'var(--red)':'#fff'}">${dec(x.promedio)}</div></div>`).join(''):'<div class="empty">Esperando respuestas…</div>';
-  const fr=(a.frases||[]).filter(f=>f.id!=='ninguna').slice(0,4);
-  $('frases').innerHTML=n?fr.map((f,i)=>`<div class="chip${i===0?' top':''}"><span>${esc(f.texto)}</span><b>${f.pct} %</b></div>`).join(''):'<div class="empty">–</div>';
+  const fr=(a.frases||[]).filter(f=>f.id!=='ninguna'&&f.id!=='otra').slice(0,4);
+  const otra=(a.frases||[]).find(f=>f.id==='otra');
+  $('frases').innerHTML=n?fr.map((f,i)=>`<div class="chip${i===0?' top':''}"><span>${esc(f.texto)}</span><b>${f.pct} %</b></div>`).join('')+(otra&&otra.pct?`<div class="otra">Y el ${otra.pct} % escribió su propia frase</div>`:''):'<div class="empty">–</div>';
   const e=a.eslabon||{};
   $('esl').innerHTML=n?`<div class="big">${e.pct} %</div><div class="txt">tiene <b>Liderazgo o Gobernanza</b> por debajo de 2: sin dueño o sin reglas, no pasa del nivel 2.</div><div class="quote">«Usás mucha AI, pero sin dueño o sin reglas no escala.»</div>`:'<div class="empty">–</div>';
 }
