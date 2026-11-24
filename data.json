@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 98,
+  "n": 99,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 27,
+    "sala": 26,
     "mit": 28
    },
    {
@@ -24,7 +24,7 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 18,
+    "sala": 19,
     "mit": 31
    },
    {
@@ -47,7 +47,7 @@
    {
     "id": "ado",
     "nombre": "Adopción",
-    "promedio": 2.2,
+    "promedio": 2.3,
     "floja": false,
     "fuerte": true
    },
@@ -93,7 +93,7 @@
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 22
+    "pct": 21
    },
    {
     "id": "retorno",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 20
+    "pct": 21
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 98,
+   "n": 99,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 27,
+     "sala": 26,
      "mit": 28
     },
     {
@@ -166,7 +166,7 @@
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 18,
+     "sala": 19,
      "mit": 31
     },
     {
@@ -189,7 +189,7 @@
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": 2.2,
+     "promedio": 2.3,
      "floja": false,
      "fuerte": true
     },
@@ -235,7 +235,7 @@
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 22
+     "pct": 21
     },
     {
      "id": "retorno",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 20
+     "pct": 21
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:35:27Z"
+ "actualizado": "2026-11-24T23:36:29Z"
 }
