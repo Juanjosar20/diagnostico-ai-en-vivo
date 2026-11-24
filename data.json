@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 106,
+  "n": 107,
   "inscritos": 1446,
   "mit": {
    "1": 28,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 26,
+    "sala": 27,
     "mit": 28
    },
    {
@@ -24,7 +24,7 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 21,
+    "sala": 20,
     "mit": 31
    },
    {
@@ -81,7 +81,7 @@
    }
   ],
   "eslabon": {
-   "pct": 60,
+   "pct": 61,
    "bajaron_pct": 0
   },
   "frases": [
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 106,
+   "n": 107,
    "inscritos": 1446,
    "mit": {
     "1": 28,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 26,
+     "sala": 27,
      "mit": 28
     },
     {
@@ -166,7 +166,7 @@
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 21,
+     "sala": 20,
      "mit": 31
     },
     {
@@ -223,7 +223,7 @@
     }
    ],
    "eslabon": {
-    "pct": 60,
+    "pct": 61,
     "bajaron_pct": 0
    },
    "frases": [
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1446,
- "actualizado": "2026-11-24T23:45:54Z"
+ "actualizado": "2026-11-24T23:47:58Z"
 }
