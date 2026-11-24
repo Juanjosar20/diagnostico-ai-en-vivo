@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 58,
-  "inscritos": 1440,
+  "n": 64,
+  "inscritos": 1438,
   "mit": {
    "1": 28,
    "2": 34,
@@ -12,19 +12,19 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 33,
+    "sala": 31,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 41,
+    "sala": 44,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 21,
+    "sala": 20,
     "mit": 31
    },
    {
@@ -40,7 +40,7 @@
    {
     "id": "lid",
     "nombre": "Liderazgo",
-    "promedio": 2.0,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    },
@@ -54,14 +54,14 @@
    {
     "id": "dat",
     "nombre": "Datos y tecnología",
-    "promedio": 2.0,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    },
    {
     "id": "gob",
     "nombre": "Gobernanza",
-    "promedio": 1.9,
+    "promedio": 1.8,
     "floja": true,
     "fuerte": false
    },
@@ -81,19 +81,19 @@
    }
   ],
   "eslabon": {
-   "pct": 64,
+   "pct": 66,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 33
+    "pct": 36
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 26
+    "pct": 25
    },
    {
     "id": "retorno",
@@ -103,12 +103,12 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 9
+    "pct": 8
    },
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 15
+    "pct": 14
    },
    {
     "id": "otra",
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 58,
-   "inscritos": 1440,
+   "n": 64,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -154,19 +154,19 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 33,
+     "sala": 31,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 41,
+     "sala": 44,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 21,
+     "sala": 20,
      "mit": 31
     },
     {
@@ -182,7 +182,7 @@
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": 2.0,
+     "promedio": 2.1,
      "floja": false,
      "fuerte": false
     },
@@ -196,14 +196,14 @@
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": 2.0,
+     "promedio": 2.1,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": 1.9,
+     "promedio": 1.8,
      "floja": true,
      "fuerte": false
     },
@@ -223,19 +223,19 @@
     }
    ],
    "eslabon": {
-    "pct": 64,
+    "pct": 66,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 33
+     "pct": 36
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 26
+     "pct": 25
     },
     {
      "id": "retorno",
@@ -245,12 +245,12 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 9
+     "pct": 8
     },
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 15
+     "pct": 14
     },
     {
      "id": "otra",
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1440,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1440,
+   "inscritos": 1438,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1440,
- "actualizado": "2026-11-24T23:25:43Z"
+ "inscritos": 1438,
+ "actualizado": "2026-11-24T23:25:55Z"
 }
