@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 47,
-  "inscritos": 1438,
+  "n": 58,
+  "inscritos": 1440,
   "mit": {
    "1": 28,
    "2": 34,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 34,
+    "sala": 33,
     "mit": 28
    },
    {
@@ -30,12 +30,12 @@
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 4,
+    "sala": 5,
     "mit": 7
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 30,
+  "puntaje_promedio": 31,
   "dims": [
    {
     "id": "lid",
@@ -61,14 +61,14 @@
    {
     "id": "gob",
     "nombre": "Gobernanza",
-    "promedio": 1.8,
+    "promedio": 1.9,
     "floja": true,
     "fuerte": false
    },
    {
     "id": "tal",
     "nombre": "Talento",
-    "promedio": 1.9,
+    "promedio": 2.0,
     "floja": false,
     "fuerte": false
    },
@@ -88,27 +88,27 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 38
+    "pct": 33
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 25
+    "pct": 26
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 15
+    "pct": 17
    },
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 11
+    "pct": 9
    },
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 11
+    "pct": 15
    },
    {
     "id": "otra",
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 47,
-   "inscritos": 1438,
+   "n": 58,
+   "inscritos": 1440,
    "mit": {
     "1": 28,
     "2": 34,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 34,
+     "sala": 33,
      "mit": 28
     },
     {
@@ -172,12 +172,12 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 4,
+     "sala": 5,
      "mit": 7
     }
    ],
    "nivel_promedio": 2.0,
-   "puntaje_promedio": 30,
+   "puntaje_promedio": 31,
    "dims": [
     {
      "id": "lid",
@@ -203,14 +203,14 @@
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": 1.8,
+     "promedio": 1.9,
      "floja": true,
      "fuerte": false
     },
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": 1.9,
+     "promedio": 2.0,
      "floja": false,
      "fuerte": false
     },
@@ -230,27 +230,27 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 38
+     "pct": 33
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 25
+     "pct": 26
     },
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 15
+     "pct": 17
     },
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 11
+     "pct": 9
     },
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 11
+     "pct": 15
     },
     {
      "id": "otra",
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1438,
+   "inscritos": 1440,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1438,
+   "inscritos": 1440,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1438,
- "actualizado": "2026-11-24T23:24:52Z"
+ "inscritos": 1440,
+ "actualizado": "2026-11-24T23:25:43Z"
 }
