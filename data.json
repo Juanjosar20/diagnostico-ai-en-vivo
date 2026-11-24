@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 104,
+  "n": 105,
   "inscritos": 1446,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 26,
+    "sala": 27,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 49,
+    "sala": 48,
     "mit": 34
    },
    {
@@ -35,7 +35,7 @@
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 32,
+  "puntaje_promedio": 31,
   "dims": [
    {
     "id": "lid",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 104,
+   "n": 105,
    "inscritos": 1446,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 26,
+     "sala": 27,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 49,
+     "sala": 48,
      "mit": 34
     },
     {
@@ -177,7 +177,7 @@
     }
    ],
    "nivel_promedio": 2.0,
-   "puntaje_promedio": 32,
+   "puntaje_promedio": 31,
    "dims": [
     {
      "id": "lid",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1446,
- "actualizado": "2026-11-24T23:40:46Z"
+ "actualizado": "2026-11-24T23:43:50Z"
 }
