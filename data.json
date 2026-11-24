@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 92,
+  "n": 94,
   "inscritos": 1442,
   "mit": {
    "1": 28,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 27,
+    "sala": 28,
     "mit": 28
    },
    {
@@ -24,7 +24,7 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 19,
+    "sala": 18,
     "mit": 31
    },
    {
@@ -75,13 +75,13 @@
    {
     "id": "res",
     "nombre": "Resultados",
-    "promedio": 2.1,
+    "promedio": 2.0,
     "floja": false,
     "fuerte": false
    }
   ],
   "eslabon": {
-   "pct": 63,
+   "pct": 64,
    "bajaron_pct": 0
   },
   "frases": [
@@ -93,12 +93,12 @@
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 22
+    "pct": 21
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 22
+    "pct": 21
    },
    {
     "id": "dueno",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 18
+    "pct": 20
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 92,
+   "n": 94,
    "inscritos": 1442,
    "mit": {
     "1": 28,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 27,
+     "sala": 28,
      "mit": 28
     },
     {
@@ -166,7 +166,7 @@
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 19,
+     "sala": 18,
      "mit": 31
     },
     {
@@ -217,13 +217,13 @@
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": 2.1,
+     "promedio": 2.0,
      "floja": false,
      "fuerte": false
     }
    ],
    "eslabon": {
-    "pct": 63,
+    "pct": 64,
     "bajaron_pct": 0
    },
    "frases": [
@@ -235,12 +235,12 @@
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 22
+     "pct": 21
     },
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 22
+     "pct": 21
     },
     {
      "id": "dueno",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 18
+     "pct": 20
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1442,
- "actualizado": "2026-11-24T23:31:16Z"
+ "actualizado": "2026-11-24T23:32:19Z"
 }
