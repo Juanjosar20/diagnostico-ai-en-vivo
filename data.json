@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 78,
+  "n": 81,
   "inscritos": 1438,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 29,
+    "sala": 28,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 50,
+    "sala": 51,
     "mit": 34
    },
    {
@@ -34,7 +34,7 @@
     "mit": 7
    }
   ],
-  "nivel_promedio": 1.9,
+  "nivel_promedio": 2.0,
   "puntaje_promedio": 31,
   "dims": [
    {
@@ -81,24 +81,24 @@
    }
   ],
   "eslabon": {
-   "pct": 65,
+   "pct": 64,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 32
+    "pct": 31
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 26
+    "pct": 25
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 18
+    "pct": 20
    },
    {
     "id": "dueno",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 78,
+   "n": 81,
    "inscritos": 1438,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 29,
+     "sala": 28,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 50,
+     "sala": 51,
      "mit": 34
     },
     {
@@ -176,7 +176,7 @@
      "mit": 7
     }
    ],
-   "nivel_promedio": 1.9,
+   "nivel_promedio": 2.0,
    "puntaje_promedio": 31,
    "dims": [
     {
@@ -223,24 +223,24 @@
     }
    ],
    "eslabon": {
-    "pct": 65,
+    "pct": 64,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 32
+     "pct": 31
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 26
+     "pct": 25
     },
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 18
+     "pct": 20
     },
     {
      "id": "dueno",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1438,
- "actualizado": "2026-11-24T23:26:58Z"
+ "actualizado": "2026-11-24T23:28:00Z"
 }
