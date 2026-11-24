@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 88,
-  "inscritos": 1438,
+  "n": 91,
+  "inscritos": 1442,
   "mit": {
    "1": 28,
    "2": 34,
@@ -18,19 +18,19 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 53,
+    "sala": 52,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 17,
+    "sala": 19,
     "mit": 31
    },
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 4,
+    "sala": 3,
     "mit": 7
    }
   ],
@@ -81,29 +81,29 @@
    }
   ],
   "eslabon": {
-   "pct": 64,
+   "pct": 63,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 32
+    "pct": 31
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 23
+    "pct": 22
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 20
+    "pct": 21
    },
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 7
+    "pct": 8
    },
    {
     "id": "ninguna",
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 88,
-   "inscritos": 1438,
+   "n": 91,
+   "inscritos": 1442,
    "mit": {
     "1": 28,
     "2": 34,
@@ -160,19 +160,19 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 53,
+     "sala": 52,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 17,
+     "sala": 19,
      "mit": 31
     },
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 4,
+     "sala": 3,
      "mit": 7
     }
    ],
@@ -223,29 +223,29 @@
     }
    ],
    "eslabon": {
-    "pct": 64,
+    "pct": 63,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 32
+     "pct": 31
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 23
+     "pct": 22
     },
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 20
+     "pct": 21
     },
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 7
+     "pct": 8
     },
     {
      "id": "ninguna",
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1438,
+   "inscritos": 1442,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1438,
+   "inscritos": 1442,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1438,
- "actualizado": "2026-11-24T23:29:03Z"
+ "inscritos": 1442,
+ "actualizado": "2026-11-24T23:30:13Z"
 }
