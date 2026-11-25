@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 118,
+  "n": 119,
   "inscritos": 1548,
   "mit": {
    "1": 28,
@@ -18,13 +18,13 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 47,
+    "sala": 46,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 19,
+    "sala": 20,
     "mit": 31
    },
    {
@@ -283,7 +283,7 @@
    "etiqueta": "Martes 24"
   },
   "2026-11-25": {
-   "n": 0,
+   "n": 1,
    "inscritos": 1548,
    "mit": {
     "1": 28,
@@ -295,7 +295,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 0,
+     "sala": 100,
      "mit": 28
     },
     {
@@ -317,45 +317,62 @@
      "mit": 7
     }
    ],
-   "nivel_promedio": null,
-   "puntaje_promedio": null,
+   "nivel_promedio": 1.0,
+   "puntaje_promedio": 24,
    "dims": [
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": null
+     "promedio": 1.7,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": null
+     "promedio": 1.0,
+     "floja": true,
+     "fuerte": false
     },
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": null
+     "promedio": 2.0,
+     "floja": false,
+     "fuerte": true
     },
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": null
+     "promedio": 1.5,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": null
+     "promedio": 2.0,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": null
+     "promedio": 1.7,
+     "floja": false,
+     "fuerte": false
     }
    ],
    "eslabon": {
-    "pct": 0,
+    "pct": 100,
     "bajaron_pct": 0
    },
    "frases": [
+    {
+     "id": "competencia",
+     "texto": "«La competencia ya se está moviendo y nosotros no»",
+     "pct": 100
+    },
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
@@ -369,11 +386,6 @@
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 0
-    },
-    {
-     "id": "competencia",
-     "texto": "«La competencia ya se está moviendo y nosotros no»",
      "pct": 0
     },
     {
@@ -556,5 +568,5 @@
   }
  ],
  "inscritos": 1548,
- "actualizado": "2026-11-25T15:30:45Z"
+ "actualizado": "2026-11-25T15:52:26Z"
 }
