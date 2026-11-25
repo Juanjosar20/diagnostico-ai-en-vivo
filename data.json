@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 108,
-  "inscritos": 1449,
+  "n": 109,
+  "inscritos": 1454,
   "mit": {
    "1": 28,
    "2": 34,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 27,
+    "sala": 26,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 48,
+    "sala": 49,
     "mit": 34
    },
    {
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 108,
-   "inscritos": 1449,
+   "n": 109,
+   "inscritos": 1454,
    "mit": {
     "1": 28,
     "2": 34,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 27,
+     "sala": 26,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 48,
+     "sala": 49,
      "mit": 34
     },
     {
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1449,
+   "inscritos": 1454,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1449,
+   "inscritos": 1454,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1449,
- "actualizado": "2026-11-24T23:56:17Z"
+ "inscritos": 1454,
+ "actualizado": "2026-11-25T00:01:31Z"
 }
