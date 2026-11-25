@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 116,
+  "n": 117,
   "inscritos": 1494,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 29,
+    "sala": 30,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 47,
+    "sala": 46,
     "mit": 34
    },
    {
@@ -81,7 +81,7 @@
    }
   ],
   "eslabon": {
-   "pct": 61,
+   "pct": 62,
    "bajaron_pct": 0
   },
   "frases": [
@@ -103,12 +103,12 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 9
+    "pct": 8
    },
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 24
+    "pct": 25
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 116,
+   "n": 117,
    "inscritos": 1494,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 29,
+     "sala": 30,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 47,
+     "sala": 46,
      "mit": 34
     },
     {
@@ -223,7 +223,7 @@
     }
    ],
    "eslabon": {
-    "pct": 61,
+    "pct": 62,
     "bajaron_pct": 0
    },
    "frases": [
@@ -245,12 +245,12 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 9
+     "pct": 8
     },
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 24
+     "pct": 25
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1494,
- "actualizado": "2026-11-25T01:03:47Z"
+ "actualizado": "2026-11-25T01:05:51Z"
 }
