@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 119,
+  "n": 120,
   "inscritos": 1550,
   "mit": {
    "1": 28,
@@ -24,13 +24,13 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 20,
+    "sala": 19,
     "mit": 31
    },
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 4,
+    "sala": 5,
     "mit": 7
    }
   ],
@@ -93,22 +93,22 @@
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 19
+    "pct": 18
    },
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 19
+    "pct": 18
    },
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 8
+    "pct": 9
    },
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 24
+    "pct": 25
    },
    {
     "id": "otra",
@@ -283,7 +283,7 @@
    "etiqueta": "Martes 24"
   },
   "2026-11-25": {
-   "n": 1,
+   "n": 2,
    "inscritos": 1550,
    "mit": {
     "1": 28,
@@ -295,7 +295,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 100,
+     "sala": 50,
      "mit": 28
     },
     {
@@ -313,65 +313,65 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 0,
+     "sala": 50,
      "mit": 7
     }
    ],
-   "nivel_promedio": 1.0,
-   "puntaje_promedio": 24,
+   "nivel_promedio": 2.5,
+   "puntaje_promedio": 39,
    "dims": [
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": 1.7,
+     "promedio": 2.3,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": 1.0,
+     "promedio": 2.3,
      "floja": true,
      "fuerte": false
     },
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": 2.0,
+     "promedio": 2.8,
      "floja": false,
-     "fuerte": true
+     "fuerte": false
     },
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": 1.5,
+     "promedio": 2.8,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": 2.0,
+     "promedio": 2.8,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": 1.7,
+     "promedio": 2.8,
      "floja": false,
-     "fuerte": false
+     "fuerte": true
     }
    ],
    "eslabon": {
-    "pct": 100,
+    "pct": 50,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 100
+     "pct": 50
     },
     {
      "id": "dueno",
@@ -391,7 +391,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 0
+     "pct": 50
     },
     {
      "id": "otra",
@@ -568,5 +568,5 @@
   }
  ],
  "inscritos": 1550,
- "actualizado": "2026-11-25T17:03:42Z"
+ "actualizado": "2026-11-25T17:25:24Z"
 }
