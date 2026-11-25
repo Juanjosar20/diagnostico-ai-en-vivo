@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 112,
+  "n": 113,
   "inscritos": 1478,
   "mit": {
    "1": 28,
@@ -98,7 +98,7 @@
    {
     "id": "retorno",
     "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 20
+    "pct": 19
    },
    {
     "id": "dueno",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 22
+    "pct": 23
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 112,
+   "n": 113,
    "inscritos": 1478,
    "mit": {
     "1": 28,
@@ -240,7 +240,7 @@
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 20
+     "pct": 19
     },
     {
      "id": "dueno",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 22
+     "pct": 23
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1478,
- "actualizado": "2026-11-25T00:32:39Z"
+ "actualizado": "2026-11-25T00:41:51Z"
 }
