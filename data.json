@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 115,
+  "n": 116,
   "inscritos": 1490,
   "mit": {
    "1": 28,
@@ -40,7 +40,7 @@
    {
     "id": "lid",
     "nombre": "Liderazgo",
-    "promedio": 2.2,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    },
@@ -88,7 +88,7 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 30
+    "pct": 29
    },
    {
     "id": "datos",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 23
+    "pct": 24
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 115,
+   "n": 116,
    "inscritos": 1490,
    "mit": {
     "1": 28,
@@ -182,7 +182,7 @@
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": 2.2,
+     "promedio": 2.1,
      "floja": false,
      "fuerte": false
     },
@@ -230,7 +230,7 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 30
+     "pct": 29
     },
     {
      "id": "datos",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 23
+     "pct": 24
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1490,
- "actualizado": "2026-11-25T00:53:25Z"
+ "actualizado": "2026-11-25T00:55:29Z"
 }
