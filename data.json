@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 109,
+  "n": 110,
   "inscritos": 1454,
   "mit": {
    "1": 28,
@@ -12,13 +12,13 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 26,
+    "sala": 27,
     "mit": 28
    },
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 49,
+    "sala": 48,
     "mit": 34
    },
    {
@@ -35,7 +35,7 @@
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 32,
+  "puntaje_promedio": 31,
   "dims": [
    {
     "id": "lid",
@@ -88,7 +88,7 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 30
+    "pct": 29
    },
    {
     "id": "datos",
@@ -103,7 +103,7 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 7
+    "pct": 8
    },
    {
     "id": "ninguna",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 109,
+   "n": 110,
    "inscritos": 1454,
    "mit": {
     "1": 28,
@@ -154,13 +154,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 26,
+     "sala": 27,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 49,
+     "sala": 48,
      "mit": 34
     },
     {
@@ -177,7 +177,7 @@
     }
    ],
    "nivel_promedio": 2.0,
-   "puntaje_promedio": 32,
+   "puntaje_promedio": 31,
    "dims": [
     {
      "id": "lid",
@@ -230,7 +230,7 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 30
+     "pct": 29
     },
     {
      "id": "datos",
@@ -245,7 +245,7 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 7
+     "pct": 8
     },
     {
      "id": "ninguna",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1454,
- "actualizado": "2026-11-25T00:01:31Z"
+ "actualizado": "2026-11-25T00:02:34Z"
 }
