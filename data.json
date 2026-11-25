@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 113,
+  "n": 114,
   "inscritos": 1486,
   "mit": {
    "1": 28,
@@ -18,7 +18,7 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 48,
+    "sala": 47,
     "mit": 34
    },
    {
@@ -30,17 +30,17 @@
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 4,
+    "sala": 5,
     "mit": 7
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 31,
+  "puntaje_promedio": 32,
   "dims": [
    {
     "id": "lid",
     "nombre": "Liderazgo",
-    "promedio": 2.1,
+    "promedio": 2.2,
     "floja": false,
     "fuerte": false
    },
@@ -88,12 +88,12 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 29
+    "pct": 30
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
-    "pct": 20
+    "pct": 19
    },
    {
     "id": "retorno",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 113,
+   "n": 114,
    "inscritos": 1486,
    "mit": {
     "1": 28,
@@ -160,7 +160,7 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 48,
+     "sala": 47,
      "mit": 34
     },
     {
@@ -172,17 +172,17 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 4,
+     "sala": 5,
      "mit": 7
     }
    ],
    "nivel_promedio": 2.0,
-   "puntaje_promedio": 31,
+   "puntaje_promedio": 32,
    "dims": [
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": 2.1,
+     "promedio": 2.2,
      "floja": false,
      "fuerte": false
     },
@@ -230,12 +230,12 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 29
+     "pct": 30
     },
     {
      "id": "datos",
      "texto": "«No sé qué AI se usa ni qué datos salen»",
-     "pct": 20
+     "pct": 19
     },
     {
      "id": "retorno",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1486,
- "actualizado": "2026-11-25T00:43:01Z"
+ "actualizado": "2026-11-25T00:47:07Z"
 }
