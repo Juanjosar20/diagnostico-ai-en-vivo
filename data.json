@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 110,
+  "n": 111,
   "inscritos": 1454,
   "mit": {
    "1": 28,
@@ -12,7 +12,7 @@
    {
     "nivel": 1,
     "nombre": "Experimentar",
-    "sala": 27,
+    "sala": 28,
     "mit": 28
    },
    {
@@ -30,7 +30,7 @@
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 4,
+    "sala": 3,
     "mit": 7
    }
   ],
@@ -88,7 +88,7 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 29
+    "pct": 30
    },
    {
     "id": "datos",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 23
+    "pct": 22
    },
    {
     "id": "otra",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 110,
+   "n": 111,
    "inscritos": 1454,
    "mit": {
     "1": 28,
@@ -154,7 +154,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 27,
+     "sala": 28,
      "mit": 28
     },
     {
@@ -172,7 +172,7 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 4,
+     "sala": 3,
      "mit": 7
     }
    ],
@@ -230,7 +230,7 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 29
+     "pct": 30
     },
     {
      "id": "datos",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 23
+     "pct": 22
     },
     {
      "id": "otra",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1454,
- "actualizado": "2026-11-25T00:02:34Z"
+ "actualizado": "2026-11-25T00:05:39Z"
 }
