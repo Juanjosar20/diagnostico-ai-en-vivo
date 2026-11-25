@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 111,
+  "n": 112,
   "inscritos": 1454,
   "mit": {
    "1": 28,
@@ -24,13 +24,13 @@
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 21,
+    "sala": 20,
     "mit": 31
    },
    {
     "nivel": 4,
     "nombre": "AI en el core",
-    "sala": 3,
+    "sala": 4,
     "mit": 7
    }
   ],
@@ -40,7 +40,7 @@
    {
     "id": "lid",
     "nombre": "Liderazgo",
-    "promedio": 2.2,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    },
@@ -81,14 +81,14 @@
    }
   ],
   "eslabon": {
-   "pct": 60,
+   "pct": 61,
    "bajaron_pct": 0
   },
   "frases": [
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 30
+    "pct": 29
    },
    {
     "id": "datos",
@@ -103,7 +103,7 @@
    {
     "id": "dueno",
     "texto": "«¿Quién es dueño de la AI acá?»",
-    "pct": 8
+    "pct": 9
    },
    {
     "id": "ninguna",
@@ -142,7 +142,7 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 111,
+   "n": 112,
    "inscritos": 1454,
    "mit": {
     "1": 28,
@@ -166,13 +166,13 @@
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 21,
+     "sala": 20,
      "mit": 31
     },
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 3,
+     "sala": 4,
      "mit": 7
     }
    ],
@@ -182,7 +182,7 @@
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": 2.2,
+     "promedio": 2.1,
      "floja": false,
      "fuerte": false
     },
@@ -223,14 +223,14 @@
     }
    ],
    "eslabon": {
-    "pct": 60,
+    "pct": 61,
     "bajaron_pct": 0
    },
    "frases": [
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 30
+     "pct": 29
     },
     {
      "id": "datos",
@@ -245,7 +245,7 @@
     {
      "id": "dueno",
      "texto": "«¿Quién es dueño de la AI acá?»",
-     "pct": 8
+     "pct": 9
     },
     {
      "id": "ninguna",
@@ -556,5 +556,5 @@
   }
  ],
  "inscritos": 1454,
- "actualizado": "2026-11-25T00:05:39Z"
+ "actualizado": "2026-11-25T00:09:45Z"
 }
