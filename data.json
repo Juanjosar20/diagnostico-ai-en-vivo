@@ -1,7 +1,7 @@
 {
  "total": {
-  "n": 117,
-  "inscritos": 1494,
+  "n": 118,
+  "inscritos": 1498,
   "mit": {
    "1": 28,
    "2": 34,
@@ -18,13 +18,13 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 46,
+    "sala": 47,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 20,
+    "sala": 19,
     "mit": 31
    },
    {
@@ -88,7 +88,7 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 29
+    "pct": 30
    },
    {
     "id": "datos",
@@ -108,7 +108,7 @@
    {
     "id": "ninguna",
     "texto": "Ninguna",
-    "pct": 25
+    "pct": 24
    },
    {
     "id": "otra",
@@ -142,8 +142,8 @@
  },
  "por_dia": {
   "2026-11-24": {
-   "n": 117,
-   "inscritos": 1494,
+   "n": 118,
+   "inscritos": 1498,
    "mit": {
     "1": 28,
     "2": 34,
@@ -160,13 +160,13 @@
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 46,
+     "sala": 47,
      "mit": 34
     },
     {
      "nivel": 3,
      "nombre": "Escalar",
-     "sala": 20,
+     "sala": 19,
      "mit": 31
     },
     {
@@ -230,7 +230,7 @@
     {
      "id": "competencia",
      "texto": "«La competencia ya se está moviendo y nosotros no»",
-     "pct": 29
+     "pct": 30
     },
     {
      "id": "datos",
@@ -250,7 +250,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 25
+     "pct": 24
     },
     {
      "id": "otra",
@@ -284,7 +284,7 @@
   },
   "2026-11-25": {
    "n": 0,
-   "inscritos": 1494,
+   "inscritos": 1498,
    "mit": {
     "1": 28,
     "2": 34,
@@ -413,7 +413,7 @@
   },
   "2026-11-26": {
    "n": 0,
-   "inscritos": 1494,
+   "inscritos": 1498,
    "mit": {
     "1": 28,
     "2": 34,
@@ -555,6 +555,6 @@
    "etiqueta": "Jueves 26"
   }
  ],
- "inscritos": 1494,
- "actualizado": "2026-11-25T01:05:51Z"
+ "inscritos": 1498,
+ "actualizado": "2026-11-25T01:14:10Z"
 }
