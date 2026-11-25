@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 122,
+  "n": 124,
   "inscritos": 1553,
   "mit": {
    "1": 28,
@@ -18,13 +18,13 @@
    {
     "nivel": 2,
     "nombre": "Pilotos",
-    "sala": 47,
+    "sala": 48,
     "mit": 34
    },
    {
     "nivel": 3,
     "nombre": "Escalar",
-    "sala": 19,
+    "sala": 18,
     "mit": 31
    },
    {
@@ -88,16 +88,16 @@
    {
     "id": "competencia",
     "texto": "«La competencia ya se está moviendo y nosotros no»",
-    "pct": 30
-   },
-   {
-    "id": "retorno",
-    "texto": "«No veo el retorno de lo que ya pagamos»",
-    "pct": 19
+    "pct": 31
    },
    {
     "id": "datos",
     "texto": "«No sé qué AI se usa ni qué datos salen»",
+    "pct": 18
+   },
+   {
+    "id": "retorno",
+    "texto": "«No veo el retorno de lo que ya pagamos»",
     "pct": 18
    },
    {
@@ -283,7 +283,7 @@
    "etiqueta": "Martes 24"
   },
   "2026-11-25": {
-   "n": 4,
+   "n": 6,
    "inscritos": 1553,
    "mit": {
     "1": 28,
@@ -295,13 +295,13 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 25,
+     "sala": 17,
      "mit": 28
     },
     {
      "nivel": 2,
      "nombre": "Pilotos",
-     "sala": 50,
+     "sala": 67,
      "mit": 34
     },
     {
@@ -313,12 +313,12 @@
     {
      "nivel": 4,
      "nombre": "AI en el core",
-     "sala": 25,
+     "sala": 16,
      "mit": 7
     }
    ],
    "nivel_promedio": 2.2,
-   "puntaje_promedio": 36,
+   "puntaje_promedio": 34,
    "dims": [
     {
      "id": "lid",
@@ -330,14 +330,14 @@
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": 2.3,
+     "promedio": 2.4,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": 2.9,
+     "promedio": 2.7,
      "floja": false,
      "fuerte": true
     },
@@ -351,20 +351,20 @@
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": 2.6,
+     "promedio": 2.4,
      "floja": false,
      "fuerte": false
     },
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": 2.4,
+     "promedio": 2.2,
      "floja": false,
      "fuerte": false
     }
    ],
    "eslabon": {
-    "pct": 75,
+    "pct": 67,
     "bajaron_pct": 0
    },
    "frases": [
@@ -376,7 +376,7 @@
     {
      "id": "retorno",
      "texto": "«No veo el retorno de lo que ya pagamos»",
-     "pct": 25
+     "pct": 17
     },
     {
      "id": "dueno",
@@ -391,7 +391,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 25
+     "pct": 33
     },
     {
      "id": "otra",
@@ -568,5 +568,5 @@
   }
  ],
  "inscritos": 1553,
- "actualizado": "2026-11-25T22:41:29Z"
+ "actualizado": "2026-11-25T22:46:44Z"
 }
