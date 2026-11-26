@@ -1,6 +1,6 @@
 {
  "total": {
-  "n": 125,
+  "n": 126,
   "inscritos": 1554,
   "mit": {
    "1": 28,
@@ -35,7 +35,7 @@
    }
   ],
   "nivel_promedio": 2.0,
-  "puntaje_promedio": 32,
+  "puntaje_promedio": 31,
   "dims": [
    {
     "id": "lid",
@@ -54,7 +54,7 @@
    {
     "id": "dat",
     "nombre": "Datos y tecnología",
-    "promedio": 2.2,
+    "promedio": 2.1,
     "floja": false,
     "fuerte": false
    },
@@ -424,7 +424,7 @@
    "etiqueta": "Miércoles 25"
   },
   "2026-11-26": {
-   "n": 0,
+   "n": 1,
    "inscritos": 1554,
    "mit": {
     "1": 28,
@@ -436,7 +436,7 @@
     {
      "nivel": 1,
      "nombre": "Experimentar",
-     "sala": 0,
+     "sala": 100,
      "mit": 28
     },
     {
@@ -458,42 +458,54 @@
      "mit": 7
     }
    ],
-   "nivel_promedio": null,
-   "puntaje_promedio": null,
+   "nivel_promedio": 1.0,
+   "puntaje_promedio": 18,
    "dims": [
     {
      "id": "lid",
      "nombre": "Liderazgo",
-     "promedio": null
+     "promedio": 1.3,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "ado",
      "nombre": "Adopción",
-     "promedio": null
+     "promedio": 1.7,
+     "floja": false,
+     "fuerte": true
     },
     {
      "id": "dat",
      "nombre": "Datos y tecnología",
-     "promedio": null
+     "promedio": 1.0,
+     "floja": true,
+     "fuerte": false
     },
     {
      "id": "gob",
      "nombre": "Gobernanza",
-     "promedio": null
+     "promedio": 1.0,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "tal",
      "nombre": "Talento",
-     "promedio": null
+     "promedio": 1.0,
+     "floja": false,
+     "fuerte": false
     },
     {
      "id": "res",
      "nombre": "Resultados",
-     "promedio": null
+     "promedio": 1.0,
+     "floja": false,
+     "fuerte": false
     }
    ],
    "eslabon": {
-    "pct": 0,
+    "pct": 100,
     "bajaron_pct": 0
    },
    "frases": [
@@ -520,7 +532,7 @@
     {
      "id": "ninguna",
      "texto": "Ninguna",
-     "pct": 0
+     "pct": 100
     },
     {
      "id": "otra",
@@ -568,5 +580,5 @@
   }
  ],
  "inscritos": 1554,
- "actualizado": "2026-11-25T23:25:58Z"
+ "actualizado": "2026-11-26T08:03:04Z"
 }
